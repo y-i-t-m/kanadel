@@ -6,43 +6,68 @@
 
 /* Colors */
 
-$background      : {{settings.background}};
-$light-background: {{settings.light_background}};
-$heading-color   : {{settings.heading_color}};
-$text-color      : {{settings.text_color}};
-$text-color-light: {{settings.text_light_color}};
-$link-color      : {{settings.link_color}};
-$border-color    : {{settings.background | color_mix: settings.text_color, 85}};
+$background:{{settings.background}}
+;
+$light-background:{{settings.light_background}}
+;
+$heading-color:{{settings.heading_color}}
+;
+$text-color:{{settings.text_color}}
+;
+$text-color-light:{{settings.text_light_color}}
+;
+$link-color:{{settings.link_color}}
+;
+$border-color:{{settings.background | color_mix: settings.text_color, 85}}
+;
 
-$button-background: {{settings.button_background}};
-$button-text-color: {{settings.button_text_color}};
+$button-background:{{settings.button_background}}
+;
+$button-text-color:{{settings.button_text_color}}
+;
 
-$header-background       : {{settings.header_background}};
-$header-heading-color    : {{settings.header_heading_color}};
-$header-light-text-color : {{settings.header_light_color}};
-$header-border-color     : {{settings.header_background | color_mix: settings.header_heading_color, 85}};
+$header-background:{{settings.header_background}}
+;
+$header-heading-color:{{settings.header_heading_color}}
+;
+$header-light-text-color:{{settings.header_light_color}}
+;
+$header-border-color:{{settings.header_background | color_mix: settings.header_heading_color, 85}}
+;
 
-$footer-background    : {{settings.footer_background}};
-$footer-text-color    : {{settings.footer_text_color}};
-$footer-heading-color : {{settings.footer_heading_color}};
-$footer-border-color  : {{settings.footer_background | color_mix: settings.footer_text_color, 85}};
+$footer-background:{{settings.footer_background}}
+;
+$footer-text-color:{{settings.footer_text_color}}
+;
+$footer-heading-color:{{settings.footer_heading_color}}
+;
+$footer-border-color:{{settings.footer_background | color_mix: settings.footer_text_color, 85}}
+;
 
-$featured-background    : {{settings.featured_background}};
+$featured-background:{{settings.featured_background}}
+;
 
-$navigation-background      : {{settings.navigation_background}};
-$navigation-text-color      : {{settings.navigation_text_color}};
+$navigation-background:{{settings.navigation_background}}
+;
+$navigation-text-color:{{settings.navigation_text_color}}
+;
 $navigation-text-color-light: rgba($navigation-text-color, 0.5);
-$navigation-border-color    : rgba($navigation-text-color, 0.25);
+$navigation-border-color: rgba($navigation-text-color, 0.25);
 
-$newsletter-popup-background : {{settings.newsletter_popup_background}};
-$newsletter-popup-text-color : {{settings.newsletter_popup_text_color}};
+$newsletter-popup-background:{{settings.newsletter_popup_background}}
+;
+$newsletter-popup-text-color:{{settings.newsletter_popup_text_color}}
+;
 
-$secondary-elements-background       : {{settings.secondary_elements_background}};
-$secondary-elements-text-color       : {{settings.secondary_elements_text_color}};
-$secondary-elements-text-color-light : rgba($secondary-elements-text-color, 0.5);
-$secondary-elements-border-color     : rgba($secondary-elements-text-color, 0.25);
+$secondary-elements-background:{{settings.secondary_elements_background}}
+;
+$secondary-elements-text-color:{{settings.secondary_elements_text_color}}
+;
+$secondary-elements-text-color-light: rgba($secondary-elements-text-color, 0.5);
+$secondary-elements-border-color: rgba($secondary-elements-text-color, 0.25);
 
-$product-sale-price-color: {{settings.product_on_sale_color}};
+$product-sale-price-color:{{settings.product_on_sale_color}}
+;
 
 /* Typography */
 
@@ -57,37 +82,53 @@ $product-sale-price-color: {{settings.product_on_sale_color}};
 {{ text_font_italic | font_face: font_display: 'fallback' }}
 {{ text_font_bold_italic | font_face: font_display: 'fallback' }}
 
-$heading-font-family : {{settings.heading_font.family}}, {{ settings.heading_font.fallback_families }};
-$heading-font-weight : {{settings.heading_font.weight}};
-$heading-font-style  : {{settings.heading_font.style}};
-$heading-font-size   : {{settings.heading_size}};
+$heading-font-family: {{settings.heading_font.family}},{{ settings.heading_font.fallback_families }}
+;
+$heading-font-weight:{{settings.heading_font.weight}}
+;
+$heading-font-style:{{settings.heading_font.style}}
+;
+$heading-font-size:{{settings.heading_size}}
+;
 
-$text-font-family : {{settings.text_font.family}}, {{ settings.text_font.fallback_families }};
-$text-font-weight : {{settings.text_font.weight}};
-$text-font-style  : {{settings.text_font.style}};
+$text-font-family: {{settings.text_font.family}},{{ settings.text_font.fallback_families }}
+;
+$text-font-weight:{{settings.text_font.weight}}
+;
+$text-font-style:{{settings.text_font.style}}
+;
 
-$uppercase-heading: {% if settings.uppercase_heading %}true{% else %}false{% endif %};
+$uppercase-heading: {% if settings.uppercase_heading %}true{% else %}false{% endif %}
+;
 
-$base-text-font-size   : {{settings.base_text_font_size}}px;
+$base-text-font-size: {{settings.base_text_font_size}}px;
 $default-text-font-size: 14px;
 
 /* Products */
 
-$product-info-alignment         : {{settings.product_info_alignment}};
-$product-show-price-on-hover    : {{settings.product_show_price_on_hover}};
-$product-list-horizontal-spacing: {{settings.product_list_horizontal_spacing}};
-$product-list-vertical-spacing  : {{settings.product_list_vertical_spacing}};
+$product-info-alignment:{{settings.product_info_alignment}}
+;
+$product-show-price-on-hover:{{settings.product_show_price_on_hover}}
+;
+$product-list-horizontal-spacing:{{settings.product_list_horizontal_spacing}}
+;
+$product-list-vertical-spacing:{{settings.product_list_vertical_spacing}}
+;
 
-$cursor-zoom-in-svg    : "{{ 'cursor-zoom-in.svg' | asset_url }}";
-$cursor-zoom-in-2x-svg : "{{ 'cursor-zoom-in-2x.svg' | asset_url }}";
+$cursor-zoom-in-svg: "{{ 'cursor-zoom-in.svg' | asset_url }}";
+$cursor-zoom-in-2x-svg: "{{ 'cursor-zoom-in-2x.svg' | asset_url }}";
 
 /* Animation */
 
 $drawer-transition-timing: cubic-bezier(0.645, 0.045, 0.355, 1);
-$show-page-transition: {% if settings.show_page_transition %}true{% else %}false{% endif %};
-$show-button-transition: {% if settings.show_button_transition %}true{% else %}false{% endif %};
-$show-image-zooming: {% if settings.show_image_zooming %}true{% else %}false{% endif %};
-$show-element-staggering: {% if settings.show_element_staggering %}true{% else %}false{% endif %};
+$show-page-transition: {% if settings.show_page_transition %}true{% else %}false{% endif %}
+;
+$show-button-transition: {% if settings.show_button_transition %}true{% else %}false{% endif %}
+;
+$show-image-zooming: {% if settings.show_image_zooming %}true{% else %}false{% endif %}
+;
+$show-element-staggering: {% if settings.show_element_staggering %}true{% else %}false{% endif %}
+;
 
 /* Other */
 
@@ -379,16 +420,17 @@ td,
 th {
   padding: 0;
 }
+
 /*! Avalanche | MIT License | @colourgarden */
 
-$phone:            "screen and (max-width: 640px)";
-$tablet:           "screen and (min-width: 641px) and (max-width: 1007px)";
-$tablet-and-up:    "screen and (min-width: 641px)";
-$pocket:           "screen and (max-width: 1007px)";
-$lap:              "screen and (min-width: 1008px) and (max-width: 1139px)";
-$lap-and-up:       "screen and (min-width: 1008px)";
-$desk:             "screen and (min-width: 1140px)";
-$widescreen:       "screen and (min-width: 1500px)";
+$phone: "screen and (max-width: 640px)";
+$tablet: "screen and (min-width: 641px) and (max-width: 1007px)";
+$tablet-and-up: "screen and (min-width: 641px)";
+$pocket: "screen and (max-width: 1007px)";
+$lap: "screen and (min-width: 1008px) and (max-width: 1139px)";
+$lap-and-up: "screen and (min-width: 1008px)";
+$desk: "screen and (min-width: 1140px)";
+$widescreen: "screen and (min-width: 1500px)";
 
 @mixin av-mq($alias) {
   @if $alias == "phone" {
@@ -924,6 +966,7 @@ $widescreen:       "screen and (min-width: 1500px)";
     width: 91.66667%;
   }
 }
+
 /* Create each media query */
 @media #{$widescreen} {
   .hidden-widescreen {
@@ -974,6 +1017,7 @@ $widescreen:       "screen and (min-width: 1500px)";
     width: 91.66667%;
   }
 }
+
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 /*
 	Styles for basic PhotoSwipe functionality (sliding area, open/close transitions)
@@ -1196,263 +1240,7 @@ $widescreen:       "screen and (min-width: 1500px)";
  * This lookup table is needed since there is no `pow` in SASS.
  */
 
-$linear-channel-values:
-  0
-  .0003035269835488375
-  .000607053967097675
-  .0009105809506465125
-  .00121410793419535
-  .0015176349177441874
-  .001821161901293025
-  .0021246888848418626
-  .0024282158683907
-  .0027317428519395373
-  .003035269835488375
-  .003346535763899161
-  .003676507324047436
-  .004024717018496307
-  .004391442037410293
-  .004776953480693729
-  .005181516702338386
-  .005605391624202723
-  .006048833022857054
-  .006512090792594475
-  .006995410187265387
-  .007499032043226175
-  .008023192985384994
-  .008568125618069307
-  .009134058702220787
-  .00972121732023785
-  .010329823029626936
-  .010960094006488246
-  .011612245179743885
-  .012286488356915872
-  .012983032342173012
-  .013702083047289686
-  .014443843596092545
-  .01520851442291271
-  .01599629336550963
-  .016807375752887384
-  .017641954488384078
-  .018500220128379697
-  .019382360956935723
-  .0202885630566524
-  .021219010376003555
-  .022173884793387385
-  .02315336617811041
-  .024157632448504756
-  .02518685962736163
-  .026241221894849898
-  .027320891639074894
-  .028426039504420793
-  .0295568344378088
-  .030713443732993635
-  .03189603307301153
-  .033104766570885055
-  .03433980680868217
-  .03560131487502034
-  .03688945040110004
-  .0382043715953465
-  .03954623527673284
-  .04091519690685319
-  .042311410620809675
-  .043735029256973465
-  .04518620438567554
-  .046665086336880095
-  .04817182422688942
-  .04970656598412723
-  .05126945837404324
-  .052860647023180246
-  .05448027644244237
-  .05612849004960009
-  .05780543019106723
-  .0595112381629812
-  .06124605423161761
-  .06301001765316767
-  .06480326669290577
-  .06662593864377289
-  .06847816984440017
-  .07036009569659588
-  .07227185068231748
-  .07421356838014963
-  .07618538148130785
-  .07818742180518633
-  .08021982031446832
-  .0822827071298148
-  .08437621154414882
-  .08650046203654976
-  .08865558628577294
-  .09084171118340768
-  .09305896284668745
-  .0953074666309647
-  .09758734714186246
-  .09989872824711389
-  .10224173308810132
-  .10461648409110419
-  .10702310297826761
-  .10946171077829933
-  .1119324278369056
-  .11443537382697373
-  .11697066775851084
-  .11953842798834562
-  .12213877222960187
-  .12477181756095049
-  .12743768043564743
-  .1301364766903643
-  .13286832155381798
-  .13563332965520566
-  .13843161503245183
-  .14126329114027164
-  .14412847085805777
-  .14702726649759498
-  .14995978981060856
-  .15292615199615017
-  .1559264637078274
-  .1589608350608804
-  .162029375639111
-  .1651321945016676
-  .16826940018969075
-  .1714411007328226
-  .17464740365558504
-  .17788841598362912
-  .18116424424986022
-  .184474994500441
-  .18782077230067787
-  .19120168274079138
-  .1946178304415758
-  .19806931955994886
-  .20155625379439707
-  .20507873639031693
-  .20863687014525575
-  .21223075741405523
-  .21586050011389926
-  .2195261997292692
-  .2232279573168085
-  .22696587351009836
-  .23074004852434915
-  .23455058216100522
-  .238397573812271
-  .24228112246555486
-  .24620132670783548
-  .25015828472995344
-  .25415209433082675
-  .2581828529215958
-  .26225065752969623
-  .26635560480286247
-  .2704977910130658
-  .27467731206038465
-  .2788942634768104
-  .2831487404299921
-  .2874408377269175
-  .29177064981753587
-  .2961382707983211
-  .3005437944157765
-  .3049873140698863
-  .30946892281750854
-  .31398871337571754
-  .31854677812509186
-  .32314320911295075
-  .3277780980565422
-  .33245153634617935
-  .33716361504833037
-  .3419144249086609
-  .3467040563550296
-  .35153259950043936
-  .3564001441459435
-  .3613067797835095
-  .3662525955988395
-  .3712376804741491
-  .3762621229909065
-  .38132601143253014
-  .386429433787049
-  .39157247774972326
-  .39675523072562685
-  .4019777798321958
-  .4072402119017367
-  .41254261348390375
-  .4178850708481375
-  .4232676699860717
-  .4286904966139066
-  .43415363617474895
-  .4396571738409188
-  .44520119451622786
-  .45078578283822346
-  .45641102318040466
-  .4620769996544071
-  .467783796112159
-  .47353149614800955
-  .4793201831008268
-  .4851499400560704
-  .4910208498478356
-  .4969329950608704
-  .5028864580325687
-  .5088813208549338
-  .5149176653765214
-  .5209955732043543
-  .5271151257058131
-  .5332764040105052
-  .5394794890121072
-  .5457244613701866
-  .5520114015120001
-  .5583403896342679
-  .5647115057049292
-  .5711248294648731
-  .5775804404296506
-  .5840784178911641
-  .5906188409193369
-  .5972017883637634
-  .6038273388553378
-  .6104955708078648
-  .6172065624196511
-  .6239603916750761
-  .6307571363461468
-  .6375968739940326
-  .6444796819705821
-  .6514056374198242
-  .6583748172794485
-  .665387298282272
-  .6724431569576875
-  .6795424696330938
-  .6866853124353135
-  .6938717612919899
-  .7011018919329731
-  .7083757798916868
-  .7156935005064807
-  .7230551289219693
-  .7304607400903537
-  .7379104087727308
-  .7454042095403874
-  .7529422167760779
-  .7605245046752924
-  .768151147247507
-  .7758222183174236
-  .7835377915261935
-  .7912979403326302
-  .799102738014409
-  .8069522576692516
-  .8148465722161012
-  .8227857543962835
-  .8307698767746546
-  .83879901174074
-  .846873231509858
-  .8549926081242338
-  .8631572134541023
-  .8713671191987972
-  .8796223968878317
-  .8879231178819663
-  .8962693533742664
-  .9046611743911496
-  .9130986517934192
-  .9215818562772946
-  .9301108583754237
-  .938685728457888
-  .9473065367331999
-  .9559733532492861
-  .9646862478944651
-  .9734452903984125
-  .9822505503331171
-  .9911020971138298
-  1;
+$linear-channel-values: 0 .0003035269835488375 .000607053967097675 .0009105809506465125 .00121410793419535 .0015176349177441874 .001821161901293025 .0021246888848418626 .0024282158683907 .0027317428519395373 .003035269835488375 .003346535763899161 .003676507324047436 .004024717018496307 .004391442037410293 .004776953480693729 .005181516702338386 .005605391624202723 .006048833022857054 .006512090792594475 .006995410187265387 .007499032043226175 .008023192985384994 .008568125618069307 .009134058702220787 .00972121732023785 .010329823029626936 .010960094006488246 .011612245179743885 .012286488356915872 .012983032342173012 .013702083047289686 .014443843596092545 .01520851442291271 .01599629336550963 .016807375752887384 .017641954488384078 .018500220128379697 .019382360956935723 .0202885630566524 .021219010376003555 .022173884793387385 .02315336617811041 .024157632448504756 .02518685962736163 .026241221894849898 .027320891639074894 .028426039504420793 .0295568344378088 .030713443732993635 .03189603307301153 .033104766570885055 .03433980680868217 .03560131487502034 .03688945040110004 .0382043715953465 .03954623527673284 .04091519690685319 .042311410620809675 .043735029256973465 .04518620438567554 .046665086336880095 .04817182422688942 .04970656598412723 .05126945837404324 .052860647023180246 .05448027644244237 .05612849004960009 .05780543019106723 .0595112381629812 .06124605423161761 .06301001765316767 .06480326669290577 .06662593864377289 .06847816984440017 .07036009569659588 .07227185068231748 .07421356838014963 .07618538148130785 .07818742180518633 .08021982031446832 .0822827071298148 .08437621154414882 .08650046203654976 .08865558628577294 .09084171118340768 .09305896284668745 .0953074666309647 .09758734714186246 .09989872824711389 .10224173308810132 .10461648409110419 .10702310297826761 .10946171077829933 .1119324278369056 .11443537382697373 .11697066775851084 .11953842798834562 .12213877222960187 .12477181756095049 .12743768043564743 .1301364766903643 .13286832155381798 .13563332965520566 .13843161503245183 .14126329114027164 .14412847085805777 .14702726649759498 .14995978981060856 .15292615199615017 .1559264637078274 .1589608350608804 .162029375639111 .1651321945016676 .16826940018969075 .1714411007328226 .17464740365558504 .17788841598362912 .18116424424986022 .184474994500441 .18782077230067787 .19120168274079138 .1946178304415758 .19806931955994886 .20155625379439707 .20507873639031693 .20863687014525575 .21223075741405523 .21586050011389926 .2195261997292692 .2232279573168085 .22696587351009836 .23074004852434915 .23455058216100522 .238397573812271 .24228112246555486 .24620132670783548 .25015828472995344 .25415209433082675 .2581828529215958 .26225065752969623 .26635560480286247 .2704977910130658 .27467731206038465 .2788942634768104 .2831487404299921 .2874408377269175 .29177064981753587 .2961382707983211 .3005437944157765 .3049873140698863 .30946892281750854 .31398871337571754 .31854677812509186 .32314320911295075 .3277780980565422 .33245153634617935 .33716361504833037 .3419144249086609 .3467040563550296 .35153259950043936 .3564001441459435 .3613067797835095 .3662525955988395 .3712376804741491 .3762621229909065 .38132601143253014 .386429433787049 .39157247774972326 .39675523072562685 .4019777798321958 .4072402119017367 .41254261348390375 .4178850708481375 .4232676699860717 .4286904966139066 .43415363617474895 .4396571738409188 .44520119451622786 .45078578283822346 .45641102318040466 .4620769996544071 .467783796112159 .47353149614800955 .4793201831008268 .4851499400560704 .4910208498478356 .4969329950608704 .5028864580325687 .5088813208549338 .5149176653765214 .5209955732043543 .5271151257058131 .5332764040105052 .5394794890121072 .5457244613701866 .5520114015120001 .5583403896342679 .5647115057049292 .5711248294648731 .5775804404296506 .5840784178911641 .5906188409193369 .5972017883637634 .6038273388553378 .6104955708078648 .6172065624196511 .6239603916750761 .6307571363461468 .6375968739940326 .6444796819705821 .6514056374198242 .6583748172794485 .665387298282272 .6724431569576875 .6795424696330938 .6866853124353135 .6938717612919899 .7011018919329731 .7083757798916868 .7156935005064807 .7230551289219693 .7304607400903537 .7379104087727308 .7454042095403874 .7529422167760779 .7605245046752924 .768151147247507 .7758222183174236 .7835377915261935 .7912979403326302 .799102738014409 .8069522576692516 .8148465722161012 .8227857543962835 .8307698767746546 .83879901174074 .846873231509858 .8549926081242338 .8631572134541023 .8713671191987972 .8796223968878317 .8879231178819663 .8962693533742664 .9046611743911496 .9130986517934192 .9215818562772946 .9301108583754237 .938685728457888 .9473065367331999 .9559733532492861 .9646862478944651 .9734452903984125 .9822505503331171 .9911020971138298 1;
 
 /**
  * Calculate the luminance for a color.
@@ -1476,6 +1264,7 @@ $linear-channel-values:
 
   @return max($back-lum, $fore-lum) / min($back-lum, $fore-lum);
 }
+
 .js .no-js,
 .no-js .hide-no-js {
   display: none !important;
@@ -1532,6 +1321,7 @@ body:not(.is-tabbing) textarea:focus {
     padding: 0 80px;
   }
 }
+
 /**
  * Very general typographic rules that are applied site wide
  */
@@ -1643,8 +1433,8 @@ body {
 
 .Icon {
   display: inline-block;
-  height: 1em;
-  width: 1em;
+  height: 1.5em;
+  width: 1.5em;
   fill: currentColor;
   vertical-align: middle;
   stroke-width: 1px;
@@ -1876,6 +1666,7 @@ body {
     transition: all 0.25s ease;
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Standard button
@@ -2358,6 +2149,7 @@ body {
     animation: buttonFromTopToBottom 0.5s ease-in-out forwards;
   }
 }
+
 /**
  * ----------------------------------------------------------------------------------------------
  * Flickity styles
@@ -2558,6 +2350,7 @@ body:not(.is-tabbing) .flickity-enabled:focus {
     }
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Collapsible
@@ -2716,7 +2509,8 @@ body:not(.is-tabbing) .flickity-enabled:focus {
     padding-bottom: 45px;
   }
 }
-$drawer-header-height : 50px;
+
+$drawer-header-height: 50px;
 
 /**
  * ----------------------------------------------------------------------------
@@ -2965,6 +2759,7 @@ $drawer-header-height : 50px;
     transition: opacity 0.25s cubic-bezier(.25, .46, .45, .94) 0.45s, transform 0.25s cubic-bezier(.25, .46, .45, .94) 0.45s;
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Basic form
@@ -3305,6 +3100,7 @@ select::-ms-expand {
     height: 6px;
   }
 }
+
 .HorizontalList {
   list-style: none;
   margin: -6px -8px;
@@ -3371,6 +3167,7 @@ select::-ms-expand {
     margin-left: 21px;
   }
 }
+
 /**
  * This file contains various generic bloc to use with images
  */
@@ -3607,6 +3404,7 @@ select::-ms-expand {
 .Image--lazyLoad[data-sizes="auto"] {
   width: 100%; /* this is needed to help LazySizes calculate the correct size */
 }
+
 /**
  * ----------------------------------------------------------------------------
  * List
@@ -3678,6 +3476,7 @@ select::-ms-expand {
 .Linklist--bordered li:last-child .Linklist__Item {
   margin-bottom: 2px;
 }
+
 /**
  * Google map
  */
@@ -3753,6 +3552,7 @@ select::-ms-expand {
     padding: 50px 60px;
   }
 }
+
 /**
  * --------------------------------------------------------------------
  * MEDIA API
@@ -4044,6 +3844,7 @@ select::-ms-expand {
     height: 100%;
   }
 }
+
 /**
  * --------------------------------------------------------------------
  * 3D MODEL WRAPPER
@@ -4063,6 +3864,7 @@ select::-ms-expand {
     height: 100%;
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Anchor
@@ -4790,6 +4592,7 @@ select::-ms-expand {
     }
   }
 }
+
 .Modal {
   position: fixed;
   display: flex;
@@ -4941,6 +4744,7 @@ select::-ms-expand {
     flex-shrink: 0;
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * A11Y
@@ -5284,6 +5088,7 @@ select::-ms-expand {
     }
   }
 }
+
 .Pagination {
   margin: 60px 0;
   text-align: center;
@@ -5333,6 +5138,7 @@ select::-ms-expand {
     margin: 120px 0;
   }
 }
+
 .Panel {
   position: relative;
   border: 1px solid $border-color;
@@ -5382,6 +5188,7 @@ select::-ms-expand {
     margin-right: 0;
   }
 }
+
 .Popover {
   position: fixed;
   width: 100%;
@@ -5513,7 +5320,7 @@ select::-ms-expand {
   }
 
   .Popover--positionTop.Popover--alignCenter::before,
-  .Popover--positionBottom.Popover--alignCenter::before{
+  .Popover--positionBottom.Popover--alignCenter::before {
     left: calc(50% - 10px);
   }
 
@@ -5572,6 +5379,7 @@ select::-ms-expand {
     }
   }
 }
+
 .Rte {
   word-break: break-word; /* Prevent long words to go outside the container */
 
@@ -5720,6 +5528,7 @@ select::-ms-expand {
     }
   }
 }
+
 .shopify-section--hidden {
   display: none;
 }
@@ -5853,6 +5662,7 @@ select::-ms-expand {
     margin-top: 80px;
   }
 }
+
 .TableWrapper {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -6003,6 +5813,7 @@ select::-ms-expand {
     margin-top: 50px;
   }
 }
+
 @include av-mq('tablet') {
   .template-customers {
     .OrderAddresses .Grid__Cell + .Grid__Cell {
@@ -6098,6 +5909,7 @@ select::-ms-expand {
     min-width: 70px;
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Article inner
@@ -6420,6 +6232,7 @@ select::-ms-expand {
     padding: 140px 0;
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Article item
@@ -6565,6 +6378,7 @@ select::-ms-expand {
     margin-top: 150px;
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * General
@@ -6972,6 +6786,7 @@ select::-ms-expand {
     max-width: 130px;
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Collection item (for list of collections)
@@ -7175,8 +6990,9 @@ select::-ms-expand {
 }
 
 .supports-sticky .CollectionToolbar--bottom {
-  bottom: 0; /* as of today the best polyfill I've found does not support polyfilling sticky on bottom. As a consequence on those old
-                browsers, the stickiness is always at the top */
+  bottom: 0;
+  /* as of today the best polyfill I've found does not support polyfilling sticky on bottom. As a consequence on those old
+                 browsers, the stickiness is always at the top */
 }
 
 .CollectionToolbar__Group {
@@ -7520,43 +7336,43 @@ select::-ms-expand {
 }
 
 $horizontal-spacing-four-products-per-row: 0px;
-$vertical-spacing-four-products-per-row  : 0px;
+$vertical-spacing-four-products-per-row: 0px;
 
 $horizontal-spacing-two-products-per-row: 0px;
-$vertical-spacing-two-products-per-row  : 0px;
+$vertical-spacing-two-products-per-row: 0px;
 
 @if ($product-list-horizontal-spacing == 'extra_small') {
   $horizontal-spacing-four-products-per-row: 20px;
-  $horizontal-spacing-two-products-per-row : 20px;
+  $horizontal-spacing-two-products-per-row: 20px;
 } @else if ($product-list-horizontal-spacing == 'small') {
   $horizontal-spacing-four-products-per-row: 40px;
-  $horizontal-spacing-two-products-per-row : 40px;
+  $horizontal-spacing-two-products-per-row: 40px;
 } @else if ($product-list-horizontal-spacing == 'medium') {
   $horizontal-spacing-four-products-per-row: 60px;
-  $horizontal-spacing-two-products-per-row : 60px;
+  $horizontal-spacing-two-products-per-row: 60px;
 } @else if ($product-list-horizontal-spacing == 'large') {
   $horizontal-spacing-four-products-per-row: 80px;
-  $horizontal-spacing-two-products-per-row : 80px;
+  $horizontal-spacing-two-products-per-row: 80px;
 } @else if ($product-list-horizontal-spacing == 'extra_large') {
   $horizontal-spacing-four-products-per-row: 100px;
-  $horizontal-spacing-two-products-per-row : 100px;
+  $horizontal-spacing-two-products-per-row: 100px;
 }
 
 @if ($product-list-vertical-spacing == 'extra_small') {
   $vertical-spacing-four-products-per-row: 40px;
-  $vertical-spacing-two-products-per-row : 50px;
+  $vertical-spacing-two-products-per-row: 50px;
 } @else if ($product-list-vertical-spacing == 'small') {
   $vertical-spacing-four-products-per-row: 60px;
-  $vertical-spacing-two-products-per-row : 75px;
+  $vertical-spacing-two-products-per-row: 75px;
 } @else if ($product-list-vertical-spacing == 'medium') {
   $vertical-spacing-four-products-per-row: 80px;
-  $vertical-spacing-two-products-per-row : 100px;
+  $vertical-spacing-two-products-per-row: 100px;
 } @else if ($product-list-vertical-spacing == 'large') {
   $vertical-spacing-four-products-per-row: 100px;
-  $vertical-spacing-two-products-per-row : 125px;
+  $vertical-spacing-two-products-per-row: 125px;
 } @else if ($product-list-vertical-spacing == 'extra_large') {
   $vertical-spacing-four-products-per-row: 120px;
-  $vertical-spacing-two-products-per-row : 150px;
+  $vertical-spacing-two-products-per-row: 150px;
 }
 
 @include av-mq('desk') {
@@ -7759,6 +7575,7 @@ $vertical-spacing-two-products-per-row  : 0px;
     height: 100%;
   }
 }
+
 .Faq__Section {
   margin-bottom: 20px;
 }
@@ -7871,6 +7688,7 @@ $vertical-spacing-two-products-per-row  : 0px;
     margin-top: 60px;
   }
 }
+
 /**
  * As of today this section is displayed on the home page only
  */
@@ -7969,6 +7787,7 @@ $vertical-spacing-two-products-per-row  : 0px;
     padding-left: 100px;
   }
 }
+
 .shopify-section--bordered + .shopify-section--footer {
   border-top: 1px solid $footer-border-color;
 }
@@ -8151,7 +7970,7 @@ $vertical-spacing-two-products-per-row  : 0px;
   }
 
   .Footer__Block--text,
-  .Footer__Block--newsletter{
+  .Footer__Block--newsletter {
     flex-basis: 240px;
   }
 
@@ -8169,6 +7988,7 @@ $vertical-spacing-two-products-per-row  : 0px;
     flex-basis: 375px;
   }
 }
+
 .GiftCard {
   text-align: center;
 }
@@ -8208,6 +8028,7 @@ $vertical-spacing-two-products-per-row  : 0px;
 .GiftCard__QrCode img {
   margin: 0 auto;
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Main header
@@ -8300,8 +8121,8 @@ $vertical-spacing-two-products-per-row  : 0px;
   }
 
   .Header__Icon svg {
-    -webkit-filter: drop-shadow(0 1px rgba(#000000,0.25));
-    filter: drop-shadow(0 1px rgba(#000000,0.25));
+    -webkit-filter: drop-shadow(0 1px rgba(#000000, 0.25));
+    filter: drop-shadow(0 1px rgba(#000000, 0.25));
   }
 
   .Header__Icon,
@@ -8723,6 +8544,7 @@ $vertical-spacing-two-products-per-row  : 0px;
     transform: scale(1.2);
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Image with text overlay section
@@ -8910,6 +8732,7 @@ $vertical-spacing-two-products-per-row  : 0px;
     bottom: 50px;
   }
 }
+
 .NewsletterPopup {
   position: fixed;
   bottom: 15px;
@@ -9016,6 +8839,7 @@ $vertical-spacing-two-products-per-row  : 0px;
     height: 18px;
   }
 }
+
 .Password {
   display: flex;
   flex-direction: column;
@@ -9188,6 +9012,7 @@ $vertical-spacing-two-products-per-row  : 0px;
   display: flex;
   justify-content: center;
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Product (general)
@@ -9874,8 +9699,8 @@ $vertical-spacing-two-products-per-row  : 0px;
 
   svg {
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 24px;
+    height: 24px;
     opacity: 0.6;
     transition: opacity 0.2s ease-in-out;
   }
@@ -10386,6 +10211,7 @@ $vertical-spacing-two-products-per-row  : 0px;
 .shopify-payment-button__button--unbranded {
   @extend .Button, .Button--primary;
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Product reviews (integration with Shopify Reviews free app)
@@ -10648,6 +10474,7 @@ $vertical-spacing-two-products-per-row  : 0px;
     margin-right: 100px !important;
   }
 }
+
 .Search {
   display: block;
   position: absolute;
@@ -10806,6 +10633,7 @@ $vertical-spacing-two-products-per-row  : 0px;
     margin-bottom: 48px;
   }
 }
+
 @-webkit-keyframes shopTheLookDotKeyframe {
   0% {
     transform: scale(1.0);
@@ -11033,6 +10861,7 @@ $vertical-spacing-two-products-per-row  : 0px;
     left: 40px;
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Sidebar
@@ -11154,6 +10983,7 @@ $vertical-spacing-two-products-per-row  : 0px;
     height: 70px;
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * Slideshow
@@ -11278,6 +11108,7 @@ $vertical-spacing-two-products-per-row  : 0px;
     padding: 0 70px;
   }
 }
+
 /**
  * For now testimonials are only used on home page but may be expanded
  */
@@ -11431,6 +11262,7 @@ $vertical-spacing-two-products-per-row  : 0px;
     margin: 0 45px;
   }
 }
+
 /**
  * ----------------------------------------------------------------------------
  * For now timeline are only used on home page but may be expanded
@@ -11692,24 +11524,26 @@ $vertical-spacing-two-products-per-row  : 0px;
 }
 
 i.icon-swym-wishlist {
-font-family: 'swym-icons';
-font-style: normal;
-vertical-align: middle;
+  font-family: 'swym-icons';
+  font-style: normal;
+  vertical-align: middle;
   color: red;
 }
-i.icon-swym-wishlist+span {
-vertical-align: middle;
+
+i.icon-swym-wishlist + span {
+  vertical-align: middle;
 }
+
 i.icon-swym-wishlist:after {
-content: '';
-font-size: 130%;
-line-height: 18px;
-text-align: center;
-display: inline;
+  content: '';
+  font-size: 130%;
+  line-height: 18px;
+  text-align: center;
+  display: inline;
 }
 
 .swym-ready i.icon-swym-wishlist:after {
-content: '\f004';
+  content: '\f004';
 }
 
 .flex {
@@ -11717,5 +11551,5 @@ content: '\f004';
 }
 
 #featured-collections {
-  background-color:  $featured-background;
+  background-color: $featured-background;
 }
