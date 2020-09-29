@@ -164,6 +164,16 @@
         "id": "secondary_elements_text_color",
         "label": "Text",
         "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "featured-correction"
+      },
+      {
+        "type": "color",
+        "id": "featured_background",
+        "label": "Background",
+        "default": "#333"
       }
     ]
   },
@@ -516,6 +526,12 @@
         "id": "social_fancy",
         "info": "https:\/\/fancy.com\/Shopify",
         "label": "Fancy"
+      },
+      {
+        "type": "text",
+        "id": "social_line",
+        "info": "https:\/\/fancy.com\/Shopify",
+        "label": "LINE"
       }
     ]
   },

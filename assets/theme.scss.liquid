@@ -27,6 +27,8 @@ $footer-text-color    : {{settings.footer_text_color}};
 $footer-heading-color : {{settings.footer_heading_color}};
 $footer-border-color  : {{settings.footer_background | color_mix: settings.footer_text_color, 85}};
 
+$featured-background    : {{settings.featured_background}};
+
 $navigation-background      : {{settings.navigation_background}};
 $navigation-text-color      : {{settings.navigation_text_color}};
 $navigation-text-color-light: rgba($navigation-text-color, 0.5);
@@ -11687,4 +11689,33 @@ $vertical-spacing-two-products-per-row  : 0px;
   .Timeline__Nav {
     margin-top: 65px;
   }
+}
+
+i.icon-swym-wishlist {
+font-family: 'swym-icons';
+font-style: normal;
+vertical-align: middle;
+  color: red;
+}
+i.icon-swym-wishlist+span {
+vertical-align: middle;
+}
+i.icon-swym-wishlist:after {
+content: '';
+font-size: 130%;
+line-height: 18px;
+text-align: center;
+display: inline;
+}
+
+.swym-ready i.icon-swym-wishlist:after {
+content: '\f004';
+}
+
+.flex {
+  display: flex;
+}
+
+#featured-collections {
+  background-color:  $featured-background;
 }

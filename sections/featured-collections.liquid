@@ -20,7 +20,7 @@
 }
 {%- endcapture -%}
 
-<section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
+<section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" id="featured-collections" data-section-type="featured-collections" data-settings='{{ section_settings }}'>
   <header class="SectionHeader SectionHeader--center">
     <div class="Container">
     {%- if section.settings.title != blank -%}
@@ -152,7 +152,7 @@
     {
       "type": "text",
       "id": "title",
-      "label": "Sub-heading",
+      "label": "サブタイトル",
       "default": "Featured collection"
     },
     {
@@ -214,7 +214,7 @@
     {
       "type": "range",
       "min": 2,
-      "max": 4,
+      "max": 5,
       "id": "grid_desktop_items_per_row",
       "label": "Products per row (desktop)",
       "default": 4

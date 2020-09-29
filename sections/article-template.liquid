@@ -55,7 +55,7 @@
       <header class="Article__Header">
         {%- capture article_meta -%}
           {%- if section.settings.show_date -%}
-            <span class="Article__MetaItem">{{ article.published_at | date: format: 'month_day_year' }}</span>
+            <span class="Article__MetaItem">{{ article.published_at | date: "%a, %b %d, %y, %A" }}</span>
           {%- endif -%}
 
           {%- if section.settings.show_category and article.tags != empty -%}
