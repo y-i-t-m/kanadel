@@ -40,49 +40,49 @@
 
 {% schema %}
 {
-  "name": "Popup",
+  "name": "ポップアップ",
   "settings": [
     {
       "type": "checkbox",
       "id": "show_popup",
-      "label": "Enable",
+      "label": "表示する",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "show_only_on_index",
-      "label": "Show only on home page",
+      "label": "ホームページだけ表示",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "show_only_for_visitors",
-      "label": "Show only for visitors",
-      "info": "Customers who have created an account on your shop won't see it.",
+      "label": "新規訪問者のみに表示",
+      "info": "あなたのお店でアカウントを作成した顧客には表示されません。",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "show_only_once",
-      "label": "Show only once per customer",
+      "label": "顧客ごとに一度だけ表示",
       "default": true
     },
     {
       "type": "text",
       "id": "title",
-      "label": "Heading",
+      "label": "見出し",
       "default": "Popup"
     },
     {
       "type": "richtext",
       "id": "content",
-      "label": "Text",
+      "label": "テキスト",
       "default": "<p>You can use this popup to display some useful information to your customers.</p>"
     },
     {
       "type": "checkbox",
       "id": "show_newsletter",
-      "label": "Show newsletter form",
+      "label": "ニュースレターのフォームを表示",
       "default": true
     },
     {
@@ -91,8 +91,8 @@
       "min": 0,
       "max": 15,
       "step": 1,
-      "unit": "sec",
-      "label": "Delay until the popup appears",
+      "unit": "秒",
+      "label": "ポップアップが表示されるまでの時間　",
       "default": 5
     }
   ]

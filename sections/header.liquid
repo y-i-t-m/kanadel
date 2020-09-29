@@ -512,24 +512,24 @@ HEADER CONTENT
 
 {% schema %}
 {
-  "name": "Header",
+  "name": "ヘッダー",
   "class": "shopify-section--header",
   "settings": [
     {
       "type": "checkbox",
       "id": "use_sticky_header",
-      "label": "Use sticky header",
+      "label": "ヘッダーを追従させる",
       "default": true
     },
     {
       "type": "header",
-      "content": "Logo"
+      "content": "ロゴ"
     },
     {
       "type": "image_picker",
       "id": "logo",
-      "label": "Image",
-      "info": "200 x 60px .png recommended"
+      "label": "ロゴの画像",
+      "info": "200 x 60px .png （推奨のサイズと拡張子）"
     },
     {
       "type": "range",
@@ -538,7 +538,7 @@ HEADER CONTENT
       "max": 350,
       "step": 5,
       "unit": "px",
-      "label": "Image width",
+      "label": "画像の横幅",
       "default": 140
     },
     {
@@ -548,29 +548,29 @@ HEADER CONTENT
       "max": 200,
       "step": 5,
       "unit": "px",
-      "label": "Mobile image width",
+      "label": "スマホ時の画像の横幅",
       "default": 90
     },
     {
       "type": "header",
-      "content": "Currency selector",
-      "info": "To add a currency, go to your [payment settings.](/admin/settings/payments)"
+      "content": "通貨セレクター",
+      "info": "通貨を追加するには [通貨を設定](/admin/settings/payments)"
     },
     {
       "type": "checkbox",
       "id": "show_currency_selector",
-      "label": "Show currency selector",
+      "label": "通過セレクターを表示",
       "default": true
     },
     {
       "type": "header",
-      "content": "Language selector",
-      "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+      "content": "言語セレクター",
+      "info": "言語を追加するには [言語を設定](/admin/settings/languages)"
     },
     {
       "type": "checkbox",
       "id": "show_locale_selector",
-      "label": "Show language selector",
+      "label": "言語セレクターを表示",
       "default": true
     },
     {
@@ -580,30 +580,30 @@ HEADER CONTENT
     {
       "type": "link_list",
       "id": "navigation_menu",
-      "label": "Menu",
+      "label": "メニュー",
       "default": "main-menu"
     },
     {
       "type": "select",
       "id": "navigation_style",
-      "label": "Navigation style",
-      "info": "Setting will default to center style if screen width cannot fit all the links.",
+      "label": "ナビゲーションのスタイル",
+      "info": "画面幅がすべてのリンクに収まらない場合、設定はデフォルトで中央スタイルになります。",
       "options": [
         {
           "value": "sidebar",
-          "label": "Sidebar"
+          "label": "サイドバー"
         },
         {
           "value": "inline",
-          "label": "Inline"
+          "label": "インライン"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "中央"
         },
         {
           "value": "logoLeft",
-          "label": "Logo left"
+          "label": "左にロゴ"
         }
       ],
       "default": "inline"
@@ -611,43 +611,43 @@ HEADER CONTENT
     {
       "type": "checkbox",
       "id": "show_icons",
-      "label": "Show icons",
-      "info": "Text for account, search and cart are replaced by icons on desktop.",
+      "label": "アイコンを表示",
+      "info": "アカウント、検索、カートのテキストはデスクトップ上のアイコンに置き換えられます。",
       "default": false
     },
     {
       "type": "header",
-      "content": "Transparent header"
+      "content": "ヘッダーの透明化"
     },
     {
       "type": "checkbox",
       "id": "enable_transparent_header",
-      "label": "Enable on homepage",
+      "label": "ホームページで有効にする",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "enable_transparent_header_collection",
-      "label": "Enable on collection pages",
+      "label": "商品コレクションページで表示する",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "show_transparent_header_border",
-      "label": "Show separation border",
+      "label": "ボーダーを表示する",
       "default": true
     },
     {
       "type": "color",
       "id": "transparent_text_color",
-      "label": "Text/icon color",
+      "label": "テキスト/アイコンの色",
       "default": "#ffffff"
     },
     {
       "type": "image_picker",
       "id": "transparent_logo",
-      "label": "Logo image",
-      "info": "200 x 60px .png recommended"
+      "label": "ロゴの画像",
+      "info": "200 x 60px .png （推奨のサイズと拡張子）"
     }
   ],
   "blocks": [
