@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ba1851d-ca28-459e-8719-d7a48f2c609c" name="デフォルト変更リスト" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/announcement.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/announcement.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/footer.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/footer.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/header.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/header.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/popup.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/popup.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/sidebar-menu.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/sidebar-menu.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/featured-collections.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/featured-collections.liquid" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601358929890</updated>
-      <workItem from="1601358931127" duration="5436000" />
+      <workItem from="1601358931127" duration="5605000" />
     </task>
     <servers />
   </component>
