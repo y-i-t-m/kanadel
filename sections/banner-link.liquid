@@ -1,0 +1,86 @@
+<section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" >
+    <a href="https://google.com" target="_blank" rel="noopener noreferrer"><img src="{{ "kanadel-banner1.jpg" | asset_url }}" alt=""></a>
+</section>
+
+
+{% schema %}
+{
+"name": "バナーリンク",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image",
+"info": "1500 x 800px .jpg （推奨サイズ）"
+},
+{
+"type": "color",
+"id": "background",
+"label": "Background",
+"default": "#ffffff"
+},
+{
+"type": "color",
+"id": "text_color",
+"label": "Text",
+"default": "#1c1b1b"
+},
+{
+"type": "select",
+"id": "block_size",
+"label": "Block size",
+"options": [
+{
+"value": "small",
+"label": "Small"
+},
+{
+"value": "normal",
+"label": "Normal"
+},
+{
+"value": "large",
+"label": "Large"
+}
+],
+"default": "small"
+},
+{
+"type": "text",
+"id": "title",
+"label": "見出し",
+"default": "Your story"
+},
+{
+"type": "richtext",
+"id": "content",
+"label": "Text",
+"default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+},
+{
+"type": "text",
+"id": "button_label",
+"label": "Button label"
+},
+{
+"type": "url",
+"id": "button_link",
+"label": "Button link"
+},
+{
+"type": "checkbox",
+"id": "show_parallax",
+"label": "Show parallax scrolling effect",
+"info": "Only applies to desktop.",
+"default": true
+}
+],
+"presets": [
+{
+"category": "Image",
+"name": "バナーリンク",
+"settings": {}
+}
+]
+}
+{% endschema %}

@@ -12,9 +12,9 @@
     "header_background": "#ffffff",
     "header_heading_color": "#5c5c5c",
     "header_light_color": "#939393",
-    "footer_background": "#e6ebf2",
+    "footer_background": "#f6cd4a",
     "footer_heading_color": "#5c5c5c",
-    "footer_text_color": "#939393",
+    "footer_text_color": "#333333",
     "navigation_background": "#ffffff",
     "navigation_text_color": "#5c5c5c",
     "newsletter_popup_background": "#ffffff",
@@ -52,14 +52,14 @@
     "social_linkedin": "",
     "social_snapchat": "",
     "social_fancy": "",
-    "social_line": "",
+    "social_line": "https:\/\/fancy.com\/Shopify",
     "favicon": "",
     "checkout_header_image": "",
     "checkout_logo_image": "",
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
     "checkout_body_background_image": "",
-    "checkout_body_background_color": "#fff",
+    "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_image": "",
     "checkout_sidebar_background_color": "#fafafa",
@@ -85,8 +85,7 @@
           "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content": "アナウンスがあればここに記述",
-          "link": ""
+          "content": "アナウンスがあればここに記述"
         }
       },
       "header": {
@@ -111,12 +110,12 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "1600944396178": {
+          "footer-0": {
             "type": "text",
             "settings": {
-              "title": "",
-              "content": "<p><a href=\"\/collections\/t%E3%82%B7%E3%83%A3%E3%83%84\" title=\"Tシャツ\">業務用の方はこちら<\/a><\/p>",
-              "show_social_media": false
+              "title": "HNBについて",
+              "content": "<p>HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。<\/p>",
+              "show_social_media": true
             }
           },
           "footer-1": {
@@ -125,23 +124,23 @@
               "menu": "main-menu"
             }
           },
-          "footer-0": {
+          "1600944396178": {
             "type": "text",
             "settings": {
-              "title": "HNBについて",
-              "content": "<p>HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。<\/p>",
-              "show_social_media": true
+              "title": "",
+              "content": "<p><a href=\"\/collections\/t%E3%82%B7%E3%83%A3%E3%83%84\" title=\"Tシャツ\">業務用の方はこちら<\/a><\/p>",
+              "show_social_media": false
             }
           }
         },
         "block_order": [
-          "1600944396178",
+          "footer-0",
           "footer-1",
-          "footer-0"
+          "1600944396178"
         ],
         "settings": {
           "show_payment_methods": true,
-          "show_currency_selector": true,
+          "show_currency_selector": false,
           "show_locale_selector": true
         }
       },
@@ -152,45 +151,35 @@
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/slide1.jpg",
-              "mobile_image": "",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "HIROSHIMA HINODE LAGER",
               "title": "広島日の出ラガー",
               "button_1_text": "VIEW MORE",
-              "button_1_link": "",
-              "button_2_text": "",
-              "button_2_link": ""
+              "button_2_text": ""
             }
           },
           "slide-0": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/main1.png",
-              "mobile_image": "",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "広島日の出ラガー",
               "title": "hiroshima hinode lager",
               "button_1_text": "view more",
-              "button_1_link": "",
-              "button_2_text": "",
-              "button_2_link": ""
+              "button_2_text": ""
             }
           },
           "1601283511415": {
             "type": "image",
             "settings": {
-              "image": "",
-              "mobile_image": "",
               "apply_overlay": true,
               "content_position": "bottomLeft",
               "subheading": "Slide title",
               "title": "Tell your story",
               "button_1_text": "",
-              "button_1_link": "",
-              "button_2_text": "",
-              "button_2_link": ""
+              "button_2_text": ""
             }
           }
         },
@@ -244,13 +233,11 @@
             "type": "collection",
             "settings": {
               "collection": "",
-              "image": "",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "Sub-heading",
               "title": "Collection name",
               "button_text": "View products",
-              "button_link": "",
               "apply_overlay": true
             }
           },
@@ -258,13 +245,11 @@
             "type": "collection",
             "settings": {
               "collection": "",
-              "image": "",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "Sub-heading",
               "title": "Collection name",
               "button_text": "View products",
-              "button_link": "",
               "apply_overlay": true
             }
           },
@@ -272,13 +257,11 @@
             "type": "collection",
             "settings": {
               "collection": "",
-              "image": "",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "Sub-heading",
               "title": "Collection name",
               "button_text": "View products",
-              "button_link": "",
               "apply_overlay": true
             }
           }
@@ -326,7 +309,6 @@
           "item-0": {
             "type": "item",
             "settings": {
-              "image": "",
               "apply_overlay": true,
               "title": "2000",
               "subheading": "Sub-heading",
@@ -337,7 +319,6 @@
           "item-1": {
             "type": "item",
             "settings": {
-              "image": "",
               "apply_overlay": true,
               "title": "2001",
               "subheading": "Sub-heading",
@@ -348,7 +329,6 @@
           "item-2": {
             "type": "item",
             "settings": {
-              "image": "",
               "apply_overlay": true,
               "title": "2002",
               "subheading": "Sub-heading",
@@ -384,7 +364,6 @@
           "subheading": "",
           "title": "Featured article",
           "show_category": false,
-          "button_link": "",
           "button_text": "View all articles"
         }
       },
@@ -395,7 +374,6 @@
           "look-0": {
             "type": "look",
             "settings": {
-              "image": "",
               "dot_style": "light",
               "product_1": "",
               "product_1_horizontal_position": 30,
@@ -411,7 +389,6 @@
           "look-1": {
             "type": "look",
             "settings": {
-              "image": "",
               "dot_style": "light",
               "product_1": "",
               "product_1_horizontal_position": 25,
@@ -489,7 +466,7 @@
           "show_color_swatch": true,
           "show_color_carousel": true,
           "show_quantity_selector": true,
-          "show_inventory_quantity": true,
+          "show_inventory_quantity": false,
           "inventory_quantity_threshold": 3,
           "show_price_in_button": true,
           "show_payment_button": true,
@@ -535,8 +512,7 @@
           "image": "shopify:\/\/shop_images\/hanpu.jpg",
           "image_position": "left",
           "content": "<p>簡単な説明文が入ります。これはイメージ確認用のサンプルテキストです。<\/p>",
-          "link_text": "VIEW MORE",
-          "link_url": ""
+          "link_text": "VIEW MORE"
         }
       },
       "1598610418832": {
@@ -582,7 +558,6 @@
           "subheading": "",
           "title": "COLUMN",
           "show_category": true,
-          "button_link": "",
           "button_text": "View all"
         }
       },
@@ -633,7 +608,6 @@
           "subheading": "",
           "title": "NEWS",
           "show_category": false,
-          "button_link": "",
           "button_text": "VIEW ALL"
         }
       },
@@ -645,8 +619,7 @@
           "image": "shopify:\/\/shop_images\/harebare.jpg",
           "image_position": "left",
           "content": "",
-          "link_text": "VIEW MORE",
-          "link_url": ""
+          "link_text": "VIEW MORE"
         }
       },
       "1600240255741": {
@@ -654,11 +627,9 @@
         "settings": {
           "subheading": "",
           "title": "GOLDEN GARDEN・RAKU BEER",
-          "image": "shopify:\/\/shop_images\/gg.jpg",
           "image_position": "right",
           "content": "",
-          "link_text": "COMING SOON",
-          "link_url": ""
+          "link_text": "COMING SOON"
         }
       },
       "1600242624853": {
@@ -684,7 +655,7 @@
           "show_vendor": false,
           "show_color_swatch": false,
           "grid_mobile_items_per_row": "2",
-          "grid_desktop_items_per_row": 2
+          "grid_desktop_items_per_row": 4
         }
       },
       "blog-template": {
@@ -721,11 +692,81 @@
           "title": "CRAFT BEERと炭火『はればれ』＆ HIROSHIMA NEIGHBORLY BREWING",
           "content": "<p><a href=\"\/pages\/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B\" title=\"お問い合わせ\">詳しく見る<\/a><\/p>"
         }
+      },
+      "1601441798295": {
+        "type": "banner-link",
+        "settings": {
+          "background": "#ffffff",
+          "text_color": "#1c1b1b",
+          "block_size": "small",
+          "title": "Your story",
+          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+          "button_label": "",
+          "show_parallax": true
+        }
+      },
+      "1603952542dfd0c852": {
+        "type": "timeline",
+        "blocks": {
+          "1603952542dfd0c852-0": {
+            "type": "item",
+            "settings": {
+              "apply_overlay": true,
+              "title": "CONCEPT",
+              "subheading": "OUR CONCEPT",
+              "heading": "NO BEER,NO LIFE.",
+              "content": "<p>HIROSHIMA NEIGHBORLY BREWING（ヒロシマネイバリーブリューイング）は、「ビールは笑顔になる飲み物」をコンセプトにした醸造所です。<\/p><p>広島の季節のこだわりの素材を使用し、地域資源を活用したビールを製造・提供いたします。<\/p>"
+            }
+          },
+          "1603952542dfd0c852-1": {
+            "type": "item",
+            "settings": {
+              "apply_overlay": true,
+              "title": "QUALITY",
+              "subheading": "Sub-heading",
+              "heading": "Heading",
+              "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            }
+          },
+          "1603952542dfd0c852-2": {
+            "type": "item",
+            "settings": {
+              "apply_overlay": true,
+              "title": "FUTURE",
+              "subheading": "Sub-heading",
+              "heading": "Heading",
+              "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1603952542dfd0c852-0",
+          "1603952542dfd0c852-1",
+          "1603952542dfd0c852-2"
+        ],
+        "settings": {
+          "text_color": "#ffffff"
+        }
+      },
+      "1603952860b90d994b": {
+        "type": "image-with-text-overlay",
+        "settings": {
+          "section_size": "small",
+          "image": "shopify:\/\/shop_images\/poured-beer-pints.jpg",
+          "text_color": "#333333",
+          "overlay_color": "#000000",
+          "overlay_opacity": 5,
+          "subheading": "",
+          "title": "Beer makes us Happy.",
+          "content": ""
+        }
       }
     },
     "content_for_index": [
       "slideshow",
       "1600242624853",
+      "1603952542dfd0c852",
+      "1603952860b90d994b",
       "featured-collections",
       "1599800079542",
       "1598610356232",
@@ -739,7 +780,8 @@
       "1600239772607",
       "1600239953867",
       "1600240255741",
-      "1601352961107"
+      "1601352961107",
+      "1601441798295"
     ]
   },
   "presets": {

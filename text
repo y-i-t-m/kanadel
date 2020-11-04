@@ -1,3 +1,5 @@
 ファイルを最新に保つコマンド
 
 theme get -p=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 -s=hiroshimabeer.myshopify.com -t=83458392144
+
+theme watch --allow-live

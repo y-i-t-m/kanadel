@@ -151,27 +151,27 @@
 
 {% schema %}
 {
-  "name": "Slideshow",
+  "name": "スライドショー",
   "class": "shopify-section--slideshow",
   "max_blocks": 5,
   "settings": [
     {
       "type": "checkbox",
       "id": "show_fullscreen",
-      "label": "Show full-screen images",
-      "info": "If enabled, images will be resized to fit the entire screen.",
+      "label": "フルスクリーンに画像を表示",
+      "info": "この機能を有効にすると、画像は画面全体に合うようにリサイズされます。",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "show_arrow",
-      "label": "Show bottom arrow",
+      "label": "下に矢印ボタンを表示",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "autoplay",
-      "label": "Auto rotate between slides",
+      "label": "自動スライドを有効",
       "default": true
     },
     {
@@ -180,44 +180,44 @@
       "min": 3,
       "max": 8,
       "step": 1,
-      "unit": "sec",
-      "label": "Change slides every",
+      "unit": "秒",
+      "label": "スライドを毎回変更",
       "default": 5
     },
     {
       "type": "color",
       "id": "text_color",
-      "label": "Text",
+      "label": "テキスト",
       "default": "#ffffff"
     },
     {
       "type": "color",
       "id": "button_color",
-      "label": "Button text",
+      "label": "ボタンのテキスト",
       "default": "#363636"
     },
     {
       "type": "color",
       "id": "button_background",
-      "label": "Button background",
+      "label": "ボタンの背景",
       "default": "#ffffff"
     }
   ],
   "blocks": [
     {
       "type": "image",
-      "name": "Slide",
+      "name": "スライド",
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image",
-          "info": "1800 x 800px .jpg recommended"
+          "label": "画像",
+          "info": "1800 x 800px .jpg （推奨サイズ）"
         },
         {
           "type": "image_picker",
           "id": "mobile_image",
-          "label": "Mobile image",
+          "label": "スマホ時の画像",
           "info": "750 x 1100px .jpg recommended. If none is set, desktop image will be cropped."
         },
         {
