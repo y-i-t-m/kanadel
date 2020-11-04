@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ba1851d-ca28-459e-8719-d7a48f2c609c" name="デフォルト変更リスト" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/kanadel-banner1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/kanadel-banner2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sections/banner-link.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/slideshow.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/slideshow.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text" beforeDir="false" afterPath="$PROJECT_DIR$/text" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +61,7 @@
       <workItem from="1601358931127" duration="11651000" />
       <workItem from="1601438999684" duration="5384000" />
       <workItem from="1601857223661" duration="3000" />
-      <workItem from="1604454816746" duration="215000" />
+      <workItem from="1604454816746" duration="597000" />
     </task>
     <servers />
   </component>
