@@ -6876,10 +6876,6 @@ select::-ms-expand {
 }
 
 @include av-mq('phone') {
-  .CollectionList--grid {
-    margin: -12px 12px 12px 12px;
-  }
-
   .CollectionList--grid .CollectionItem {
     padding: 12px;
   }
@@ -11575,6 +11571,7 @@ i.icon-swym-wishlist:after {
 
  .FooterLinklist__Item {
    width: 50%;
+   margin-bottom: 12px;
  }
 
  .Footer__Block--links {
@@ -11591,6 +11588,11 @@ i.icon-swym-wishlist:after {
    max-width: 320px;
    text-decoration: none;
    border-radius: 10px;
+   transition: opacity .3s;
+   &:hover,
+   &:focus {
+     opacity: .75;
+   }
  }
  
  .-bg-gray {
@@ -11616,4 +11618,13 @@ i.icon-swym-wishlist:after {
 
  .bannerLink {
    display: inline-block;
+ }
+ 
+ .c-white {
+   color: #fff;
+ }
+ .SectionHeader__ButtonWrapper.-shop {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
  }
