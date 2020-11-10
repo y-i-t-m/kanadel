@@ -23,7 +23,9 @@
  * }));
  */
 
-var links = document.links;
+
+//　外部のサイトへ飛ぶ際は、target="_blank"になるように設定
+let links = document.links;
 for (let i = 0, linksLength = links.length ; i < linksLength ; i++) {
   if (links[i].hostname !== window.location.hostname) {
     links[i].target = '_blank';
