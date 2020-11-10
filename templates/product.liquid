@@ -2,6 +2,19 @@
 {% section 'product-recommendations' %}
 {% section 'recently-viewed-products' %}
 
+
+<section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}">
+  <div class="pt-64 pb-64">
+    <div class="Container t-center">
+      <a href="https://google.com" class="bannerLink -disabled" target="_blank" rel="noopener noreferrer">
+        <picture>
+          <source srcset="{{ "goods_banner_sp.jpg" | asset_url }}" media="(max-width: 768px)"/>
+          <img class="banner" src="{{ "goods_banner.jpg" | asset_url }}" alt="">
+        </picture>
+      </a>
+    </div>
+  </div>
+</section>
 <script>
   window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)};
   ShopifyXR('addModels', {{ product.media | where: 'media_type', 'model' | json }});

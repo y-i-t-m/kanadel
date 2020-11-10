@@ -12,7 +12,7 @@
     "header_background": "#ffffff",
     "header_heading_color": "#5c5c5c",
     "header_light_color": "#939393",
-    "footer_background": "#f6cd4a",
+    "footer_background": "#efca36",
     "footer_heading_color": "#5c5c5c",
     "footer_text_color": "#333333",
     "navigation_background": "#ffffff",
@@ -21,7 +21,7 @@
     "newsletter_popup_text_color": "#1c1b1b",
     "secondary_elements_background": "#5c5c5c",
     "secondary_elements_text_color": "#ffffff",
-    "featured_background": "#f6ff97",
+    "featured_background": "#ffffff",
     "heading_font": "futura_n4",
     "heading_size": "large",
     "uppercase_heading": false,
@@ -42,17 +42,17 @@
     "cart_enable_notes": true,
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": "50",
-    "social_facebook": "https:\/\/www.facebook.com\/shopify",
-    "social_twitter": "https:\/\/twitter.com\/shopify",
+    "social_facebook": "https:\/\/www.facebook.com\/hiroshimaNB",
+    "social_twitter": "https:\/\/twitter.com\/hnb_beer",
     "social_pinterest": "",
-    "social_instagram": "https:\/\/instagram.com\/shopify",
+    "social_instagram": "https:\/\/www.instagram.com\/hnb_beer\/",
     "social_vimeo": "",
     "social_tumblr": "",
     "social_youtube": "",
     "social_linkedin": "",
     "social_snapchat": "",
     "social_fancy": "",
-    "social_line": "https:\/\/fancy.com\/Shopify",
+    "social_line_black": "https:\/\/fancy.com\/Shopify",
     "favicon": "",
     "checkout_header_image": "",
     "checkout_logo_image": "",
@@ -68,6 +68,7 @@
     "checkout_accent_color": "#323232",
     "checkout_button_color": "#5c5c5c",
     "checkout_error_color": "#e32c2b",
+    "social_line": "https:\/\/fancy.com\/Shopify",
     "featured-collections": "#ff0000",
     "sections": {
       "sidebar-menu": {
@@ -100,7 +101,7 @@
           "navigation_menu": "main-menu",
           "navigation_style": "center",
           "show_icons": true,
-          "enable_transparent_header": true,
+          "enable_transparent_header": false,
           "enable_transparent_header_collection": false,
           "show_transparent_header_border": true,
           "transparent_text_color": "#ffffff",
@@ -121,22 +122,21 @@
           "footer-1": {
             "type": "links",
             "settings": {
-              "menu": "main-menu"
+              "menu": "footer"
             }
           },
-          "1600944396178": {
-            "type": "text",
+          "bfcea0a5-efa5-429c-835d-3bb38b002637": {
+            "type": "FooterButton",
             "settings": {
-              "title": "",
-              "content": "<p><a href=\"\/collections\/t%E3%82%B7%E3%83%A3%E3%83%84\" title=\"Tシャツ\">業務用の方はこちら<\/a><\/p>",
-              "show_social_media": false
+              "title": "業務店様はこちら",
+              "content": "http:\/\/google.com"
             }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "1600944396178"
+          "bfcea0a5-efa5-429c-835d-3bb38b002637"
         ],
         "settings": {
           "show_payment_methods": true,
@@ -147,15 +147,16 @@
       "slideshow": {
         "type": "slideshow",
         "blocks": {
-          "1600237742380": {
+          "1601283511415": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/slide1.jpg",
+              "image": "shopify:\/\/shop_images\/PC.png",
+              "mobile_image": "shopify:\/\/shop_images\/SP.png",
               "apply_overlay": true,
               "content_position": "bottomLeft",
-              "subheading": "HIROSHIMA HINODE LAGER",
-              "title": "広島日の出ラガー",
-              "button_1_text": "VIEW MORE",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "",
               "button_2_text": ""
             }
           },
@@ -171,22 +172,23 @@
               "button_2_text": ""
             }
           },
-          "1601283511415": {
+          "1600237742380": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/slide1.jpg",
               "apply_overlay": true,
-              "content_position": "bottomLeft",
-              "subheading": "Slide title",
-              "title": "Tell your story",
+              "content_position": "middleLeft",
+              "subheading": "HIROSHIMA HINODE LAGER",
+              "title": "広島日の出ラガー",
               "button_1_text": "",
               "button_2_text": ""
             }
           }
         },
         "block_order": [
-          "1600237742380",
+          "1601283511415",
           "slide-0",
-          "1601283511415"
+          "1600237742380"
         ],
         "settings": {
           "show_fullscreen": true,
@@ -422,8 +424,8 @@
           "show_vendor": false,
           "collection_image_size": "normal",
           "show_sort_by": true,
-          "show_layout_switch": false,
-          "toolbar_position": "bottom",
+          "show_layout_switch": true,
+          "toolbar_position": "top",
           "filter_position": "sidebar",
           "filter_mode": "tag",
           "show_filter_color_swatch": true,
@@ -447,7 +449,6 @@
         "type": "collection-footer",
         "settings": {
           "show_section": false,
-          "image": "",
           "text_color": "#ffffff",
           "apply_overlay": true,
           "title": "Our story",
@@ -507,12 +508,12 @@
       "1598610356232": {
         "type": "text-with-image",
         "settings": {
-          "subheading": "SUBSCRIPTION",
-          "title": "定期購入・頒布会",
-          "image": "shopify:\/\/shop_images\/hanpu.jpg",
+          "subheading": "OUR CONCEPT",
+          "title": "NO BEER,NO LIFE.",
+          "image": "shopify:\/\/shop_images\/nobeer_nolife_f88cd598-b1bf-4dfd-b73b-67306271d183.jpg",
           "image_position": "left",
-          "content": "<p>簡単な説明文が入ります。これはイメージ確認用のサンプルテキストです。<\/p>",
-          "link_text": "VIEW MORE"
+          "content": "<p>HIROSHIMA NEIGHBORLY BREWING（ヒロシマネイバリーブリューイング）は、「ビールは笑顔になる飲み物」をコンセプトにした醸造所です。<\/p><p>広島の季節のこだわりの素材を使用し、地域資源を活用したビールを製造・提供いたします。<\/p>",
+          "link_text": ""
         }
       },
       "1598610418832": {
@@ -521,8 +522,8 @@
           "1598610418832-0": {
             "type": "collection",
             "settings": {
-              "collection": "tシャツ",
-              "title": "RECOMMEND",
+              "collection": "gift",
+              "title": "GIFT",
               "grid_items_count": 4,
               "button_text": "View all"
             }
@@ -567,7 +568,7 @@
           "1599800127703-0": {
             "type": "collection",
             "settings": {
-              "collection": "tシャツ",
+              "collection": "グッズ",
               "title": "ORIGINAL GOODS",
               "grid_items_count": 4,
               "button_text": "View all"
@@ -591,47 +592,6 @@
         "type": "page-contact-template",
         "settings": {}
       },
-      "1600239772607": {
-        "type": "blog-posts",
-        "blocks": {
-          "1600239772607-0": {
-            "type": "blog",
-            "settings": {
-              "blog": "ニュース"
-            }
-          }
-        },
-        "block_order": [
-          "1600239772607-0"
-        ],
-        "settings": {
-          "subheading": "",
-          "title": "NEWS",
-          "show_category": false,
-          "button_text": "VIEW ALL"
-        }
-      },
-      "1600239953867": {
-        "type": "text-with-image",
-        "settings": {
-          "subheading": "CRAFT BEERと炭火『はればれ』＆",
-          "title": "HIROSHIMA NEIGHBORLY BREWING",
-          "image": "shopify:\/\/shop_images\/harebare.jpg",
-          "image_position": "left",
-          "content": "",
-          "link_text": "VIEW MORE"
-        }
-      },
-      "1600240255741": {
-        "type": "text-with-image",
-        "settings": {
-          "subheading": "",
-          "title": "GOLDEN GARDEN・RAKU BEER",
-          "image_position": "right",
-          "content": "",
-          "link_text": "COMING SOON"
-        }
-      },
       "1600242624853": {
         "type": "featured-collections",
         "blocks": {
@@ -639,8 +599,8 @@
             "type": "collection",
             "settings": {
               "collection": "ビール",
-              "title": "",
-              "grid_items_count": 8,
+              "title": "BEER",
+              "grid_items_count": 4,
               "button_text": "View all"
             }
           }
@@ -649,7 +609,7 @@
           "1600242624853-0"
         ],
         "settings": {
-          "title": "テスト",
+          "title": "",
           "layout_mode": "grid",
           "show_product_info": true,
           "show_vendor": false,
@@ -679,38 +639,14 @@
           "show_color_swatch": false
         }
       },
-      "1601352961107": {
-        "type": "image-with-text-overlay",
-        "disabled": true,
-        "settings": {
-          "section_size": "small",
-          "image": "shopify:\/\/shop_images\/harebare.jpg",
-          "text_color": "#ffffff",
-          "overlay_color": "#000000",
-          "overlay_opacity": 25,
-          "subheading": "",
-          "title": "CRAFT BEERと炭火『はればれ』＆ HIROSHIMA NEIGHBORLY BREWING",
-          "content": "<p><a href=\"\/pages\/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B\" title=\"お問い合わせ\">詳しく見る<\/a><\/p>"
-        }
-      },
-      "1601441798295": {
-        "type": "banner-link",
-        "settings": {
-          "background": "#ffffff",
-          "text_color": "#1c1b1b",
-          "block_size": "small",
-          "title": "Your story",
-          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-          "button_label": "",
-          "show_parallax": true
-        }
-      },
       "1603952542dfd0c852": {
         "type": "timeline",
+        "disabled": true,
         "blocks": {
           "1603952542dfd0c852-0": {
             "type": "item",
             "settings": {
+              "image": "shopify:\/\/shop_images\/aaa.jpg",
               "apply_overlay": true,
               "title": "CONCEPT",
               "subheading": "OUR CONCEPT",
@@ -752,13 +688,182 @@
         "type": "image-with-text-overlay",
         "settings": {
           "section_size": "small",
-          "image": "shopify:\/\/shop_images\/poured-beer-pints.jpg",
+          "image": "shopify:\/\/shop_images\/image1.jpg",
           "text_color": "#333333",
           "overlay_color": "#000000",
-          "overlay_opacity": 5,
+          "overlay_opacity": 0,
           "subheading": "",
           "title": "Beer makes us Happy.",
           "content": ""
+        }
+      },
+      "1604473494fae1f760": {
+        "type": "collection-list",
+        "blocks": {
+          "1604473494fae1f760-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image": "shopify:\/\/shop_images\/harebare_3da5b5df-2460-4a89-87bb-28a4994a7819.jpg",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "RESTAURANT",
+              "title": "Craft beer と炭火『はればれ』",
+              "button_text": "View Site",
+              "button_link": "https:\/\/hnb.beer\/",
+              "apply_overlay": false,
+              "sns_facebook_link": "https:\/\/www.facebook.com\/harebarehiroshima",
+              "sns_twitter_link": "https:\/\/twitter.com\/harebare_beer",
+              "sns_instagram_link": "https:\/\/www.instagram.com\/harebare_hiroshima\/",
+              "line_black": "https:\/\/google.com"
+            }
+          },
+          "1604473494fae1f760-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image": "shopify:\/\/shop_images\/gg_3383e433-3615-4638-ae44-c937bb6388d0.jpg",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "RESTAURANT",
+              "title": "GoldenGarden",
+              "button_text": "View Site",
+              "button_link": "",
+              "apply_overlay": false,
+              "sns_facebook_link": "https:\/\/www.facebook.com\/goldengarden\/",
+              "sns_twitter_link": "http:\/\/twitter.com\/GOLDENGARDEN_07",
+              "sns_instagram_link": "https:\/\/www.instagram.com\/goldengarden_beer\/",
+              "line_black": ""
+            }
+          },
+          "1604473494fae1f760-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "",
+              "image": "shopify:\/\/shop_images\/raku.jpg",
+              "image_alignment": "center center",
+              "content_position": "bottomLeft",
+              "subheading": "RESTAURANT",
+              "title": "RAKU BEER",
+              "button_text": "View Site",
+              "button_link": "",
+              "apply_overlay": false,
+              "sns_facebook_link": "https:\/\/www.facebook.com\/rakubeer\/",
+              "sns_twitter_link": "https:\/\/twitter.com\/rakubeer",
+              "sns_instagram_link": "https:\/\/www.instagram.com\/rakubeer\/",
+              "line_black": ""
+            }
+          }
+        },
+        "block_order": [
+          "1604473494fae1f760-0",
+          "1604473494fae1f760-1",
+          "1604473494fae1f760-2"
+        ],
+        "settings": {
+          "image_size": "large",
+          "add_spacing": false,
+          "expand_collection": false,
+          "stack_on_mobile": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
+      },
+      "160448244264684788": {
+        "type": "image-with-text-overlay",
+        "settings": {
+          "section_size": "small",
+          "image": "shopify:\/\/shop_images\/catch02_6a79560a-0ffa-48a3-ba8c-1a081565bffe.jpg",
+          "text_color": "#dfdfdf",
+          "overlay_color": "#000000",
+          "overlay_opacity": 5,
+          "subheading": "",
+          "title": "Good luck with your beer life ...",
+          "content": ""
+        }
+      },
+      "16045415537a63041d": {
+        "type": "banner-link",
+        "settings": {
+          "background": "#ffffff",
+          "text_color": "#1c1b1b",
+          "block_size": "small",
+          "title": "Your story",
+          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+          "button_label": "",
+          "show_parallax": true
+        }
+      },
+      "1604624057ac8c7fe9": {
+        "type": "featured-collections",
+        "blocks": {
+          "1604624057ac8c7fe9-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "food",
+              "title": "FOOD",
+              "grid_items_count": 4,
+              "button_text": "View all"
+            }
+          }
+        },
+        "block_order": [
+          "1604624057ac8c7fe9-0"
+        ],
+        "settings": {
+          "title": "",
+          "layout_mode": "grid",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "1604641037b9e463db": {
+        "type": "featured-collections",
+        "blocks": {
+          "1604641037a9c0ef02-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "ビール",
+              "title": "BEER",
+              "grid_items_count": 4,
+              "button_text": "View all"
+            }
+          }
+        },
+        "block_order": [
+          "1604641037a9c0ef02-0"
+        ],
+        "settings": {
+          "title": "",
+          "layout_mode": "grid",
+          "show_product_info": true,
+          "show_vendor": false,
+          "show_color_swatch": false,
+          "grid_mobile_items_per_row": "2",
+          "grid_desktop_items_per_row": 4
+        }
+      },
+      "1604642586f25826c6": {
+        "type": "news-posts",
+        "blocks": {
+          "1604642586f25826c6-0": {
+            "type": "blog",
+            "settings": {
+              "blog": "ニュース"
+            }
+          }
+        },
+        "block_order": [
+          "1604642586f25826c6-0"
+        ],
+        "settings": {
+          "subheading": "",
+          "title": "NEWS",
+          "show_category": false,
+          "button_text": "View all"
         }
       }
     },
@@ -766,22 +871,17 @@
       "slideshow",
       "1600242624853",
       "1603952542dfd0c852",
-      "1603952860b90d994b",
-      "featured-collections",
-      "1599800079542",
       "1598610356232",
+      "1603952860b90d994b",
+      "1604641037b9e463db",
       "1598610418832",
+      "1604624057ac8c7fe9",
       "1599800127703",
-      "collection-list",
-      "featured-product",
-      "timeline",
-      "blog-posts",
-      "shop-the-look",
-      "1600239772607",
-      "1600239953867",
-      "1600240255741",
-      "1601352961107",
-      "1601441798295"
+      "16045415537a63041d",
+      "1604473494fae1f760",
+      "1599800079542",
+      "1604642586f25826c6",
+      "160448244264684788"
     ]
   },
   "presets": {

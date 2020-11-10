@@ -16,7 +16,7 @@
 {%- endcapture -%}
 
 <section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}"
-         data-section-type="product" data-section-settings='{{ section_settings }}'>
+        data-section-type="product" data-section-settings='{{ section_settings }}'>
     <div class="Product__Wrapper">
         {%- capture action_list_items -%}
             {%- if section.settings.enable_image_zoom -%}
@@ -41,13 +41,13 @@
 
                     <div class="Product__ShareList" aria-hidden="true">
                         <a class="Product__ShareItem" href="https://www.facebook.com/sharer.php?u={{ share_url }}"
-                           target="_blank" rel="noopener">{%- render 'icon' with 'facebook' -%} Facebook</a>
+                                target="_blank" rel="noopener">{%- render 'icon' with 'facebook' -%} Facebook</a>
+                        <a class="ProductMeta__ShareItem"
+                                href="https://social-plugins.line.me/lineit/share?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}"
+                                target="_blank" rel="noopener" aria-label="LINE">{%- render 'icon' with 'line' -%}</a>
                         <a class="Product__ShareItem"
-                           href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}"
-                           target="_blank" rel="noopener">{%- render 'icon' with 'pinterest' -%} Pinterest</a>
-                        <a class="Product__ShareItem"
-                           href="https://twitter.com/share?{% if twitter_text != blank %}text={{ twitter_text }}&{% endif %}url={{ share_url }}"
-                           target="_blank" rel="noopener">{%- render 'icon' with 'twitter' -%} Twitter</a>
+                                href="https://twitter.com/share?{% if twitter_text != blank %}text={{ twitter_text }}&{% endif %}url={{ share_url }}"
+                                target="_blank" rel="noopener">{%- render 'icon' with 'twitter' -%} Twitter</a>
                     </div>
                 </div>
             {%- endif -%}
@@ -79,19 +79,19 @@
                 {%- case media.media_type -%}
                     {%- when 'image' -%}
                         <div id="Media{{ media.id }}" tabindex="0"
-                             class="Product__SlideItem Product__SlideItem--image Carousel__Cell {% if initial_media_id == media.id %}is-selected{% endif %}"
-                             data-media-type="image" data-media-id="{{ media.id }}"
-                             data-media-position="{{ media.position }}"
-                             data-image-media-position="{% increment image_position %}">
+                                class="Product__SlideItem Product__SlideItem--image Carousel__Cell {% if initial_media_id == media.id %}is-selected{% endif %}"
+                                data-media-type="image" data-media-id="{{ media.id }}"
+                                data-media-position="{{ media.position }}"
+                                data-image-media-position="{% increment image_position %}">
                             <div class="AspectRatio AspectRatio--withFallback"
-                                 style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: {{ media.aspect_ratio }};">
+                                    style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%; --aspect-ratio: {{ media.aspect_ratio }};">
                                 {% assign image_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
 
                                 <img class="Image--lazyLoad Image--fadeIn" data-src="{{ image_url }}"
-                                     data-widths="[{{ supported_sizes }}]" data-sizes="auto" data-expand="-100"
-                                     alt="{{ media.alt | escape }}" data-max-width="{{ media.width }}"
-                                     data-max-height="{{ media.height }}"
-                                     data-original-src="{{ media | img_url: 'master' }}">
+                                        data-widths="[{{ supported_sizes }}]" data-sizes="auto" data-expand="-100"
+                                        alt="{{ media.alt | escape }}" data-max-width="{{ media.width }}"
+                                        data-max-height="{{ media.height }}"
+                                        data-original-src="{{ media | img_url: 'master' }}">
                                 <span class="Image__Loader"></span>
 
                                 <noscript>
@@ -102,10 +102,10 @@
 
                     {%- when 'external_video' -%}
                         <div id="Media{{ media.id }}" tabindex="-1"
-                             class="Product__SlideItem Product__SlideItem--video Carousel__Cell {% if initial_media_id == media.id %}is-selected{% endif %}"
-                             data-media-type="external_video" data-media-id="{{ media.id }}"
-                             data-media-position="{{ media.position }}" data-video-host="{{ media.host | escape }}"
-                             data-video-id="{{ media.external_id | escape }}">
+                                class="Product__SlideItem Product__SlideItem--video Carousel__Cell {% if initial_media_id == media.id %}is-selected{% endif %}"
+                                data-media-type="external_video" data-media-id="{{ media.id }}"
+                                data-media-position="{{ media.position }}" data-video-host="{{ media.host | escape }}"
+                                data-video-id="{{ media.external_id | escape }}">
                             <div class="Image--lazyLoad Image--fadeIn" data-expand="-100">
                                 <div class="VideoWrapper">
                                     {{- media | external_video_tag: image_size: '1024x' -}}
@@ -115,12 +115,12 @@
 
                     {%- when 'video' -%}
                         <div id="Media{{ media.id }}" tabindex="-1"
-                             class="Product__SlideItem Product__SlideItem--video Carousel__Cell {% if initial_media_id == media.id %}is-selected{% endif %}"
-                             data-media-type="video" data-media-id="{{ media.id }}"
-                             data-media-position="{{ media.position }}">
+                                class="Product__SlideItem Product__SlideItem--video Carousel__Cell {% if initial_media_id == media.id %}is-selected{% endif %}"
+                                data-media-type="video" data-media-id="{{ media.id }}"
+                                data-media-position="{{ media.position }}">
                             <div class="Image--lazyLoad Image--fadeIn" data-expand="-100">
                                 <div class="VideoWrapper VideoWrapper--native"
-                                     style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%">
+                                        style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%">
                                     {{- media | video_tag: image_size: '1024x', controls: true -}}
                                 </div>
                             </div>
@@ -128,9 +128,9 @@
 
                     {%- when 'model' -%}
                         <div id="Media{{ media.id }}" tabindex="-1"
-                             class="Product__SlideItem Product__SlideItem--model Carousel__Cell {% if initial_media_id == media.id %}is-selected{% endif %}"
-                             data-media-type="model" data-media-id="{{ media.id }}"
-                             data-media-position="{{ media.position }}">
+                                class="Product__SlideItem Product__SlideItem--model Carousel__Cell {% if initial_media_id == media.id %}is-selected{% endif %}"
+                                data-media-type="model" data-media-id="{{ media.id }}"
+                                data-media-position="{{ media.position }}">
                             <div class="Image--lazyLoad Image--fadeIn" data-expand="-100">
                                 <div class="ModelWrapper">
                                     {{- media | model_viewer_tag: image_size: '1024x', reveal: 'interaction', toggleable: true -}}
@@ -175,16 +175,16 @@
 
                                         {%- if section.settings.stack_images -%}
                                             <a href="#Media{{ media.id }}" data-offset="-25" data-focus-on-click
-                                               data-media-id="{{ media.id }}"
-                                               class="Product__SlideshowNavImage AspectRatio {% if forloop.first %}is-selected{% endif %}"
-                                               style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
+                                                    data-media-id="{{ media.id }}"
+                                                    class="Product__SlideshowNavImage AspectRatio {% if forloop.first %}is-selected{% endif %}"
+                                                    style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
                                                 <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
                                                 {{- nav_item_badge -}}
                                             </a>
                                         {%- else -%}
                                             <a href="{{ media | img_url: '1024x' }}" data-media-id="{{ media.id }}"
-                                               class="Product__SlideshowNavImage AspectRatio {% if forloop.first %}is-selected{% endif %}"
-                                               style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
+                                                    class="Product__SlideshowNavImage AspectRatio {% if forloop.first %}is-selected{% endif %}"
+                                                    style="--aspect-ratio: {{ media.preview_image.aspect_ratio }}">
                                                 <img src="{{ media | img_url: '160x' }}" alt="{{ media.alt | escape }}">
                                                 {{- nav_item_badge -}}
                                             </a>
@@ -203,7 +203,7 @@
                                         {%- endif -%}
 
                                         <a href="#Media{{ media.id }}" data-offset="-25" data-focus-on-click
-                                           class="Product__SlideshowNavDot {% if forloop.first %}is-selected{% endif %}"></a>
+                                                class="Product__SlideshowNavDot {% if forloop.first %}is-selected{% endif %}"></a>
                                     {%- endfor -%}
                                 </div>
                             </div>
@@ -228,7 +228,7 @@
                 {%- endcapture -%}
 
                 <div class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel"
-                     data-flickity-config='{{ flickity_options }}'>
+                        data-flickity-config='{{ flickity_options }}'>
                     {{ slideshow_media }}
                 </div>
 
@@ -346,17 +346,18 @@
 
                                     <div class="ProductMeta__ShareList Text--subdued">
                                         <a class="ProductMeta__ShareItem"
-                                           href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank"
-                                           rel="noopener"
-                                           aria-label="Facebook">{%- render 'icon' with 'facebook' -%}</a>
+                                                href="https://www.facebook.com/sharer.php?u={{ share_url }}"
+                                                target="_blank"
+                                                rel="noopener"
+                                                aria-label="Facebook">{%- render 'icon' with 'facebook' -%}</a>
                                         <a class="ProductMeta__ShareItem"
-                                           href="https://twitter.com/share?{% if twitter_text != blank %}text={{ twitter_text }}&{% endif %}url={{ share_url }}"
-                                           target="_blank" rel="noopener"
-                                           aria-label="Twitter">{%- render 'icon' with 'twitter' -%}</a>
+                                                href="https://twitter.com/share?{% if twitter_text != blank %}text={{ twitter_text }}&{% endif %}url={{ share_url }}"
+                                                target="_blank" rel="noopener"
+                                                aria-label="Twitter">{%- render 'icon' with 'twitter' -%}</a>
                                         <a class="ProductMeta__ShareItem"
-                                           href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}"
-                                           target="_blank" rel="noopener"
-                                           aria-label="Pinterest">{%- render 'icon' with 'pinterest' -%}</a>
+                                                href="https://social-plugins.line.me/lineit/share?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}"
+                                                target="_blank" rel="noopener"
+                                                aria-label="LINE">{%- render 'icon' with 'line_black' -%}</a>
                                     </div>
                                 </div>
                             {%- endif -%}
@@ -367,9 +368,9 @@
                         <div class="Product__QuickNav hidden-pocket">
                             <div class="Product__QuickNavWrapper">
                                 <a href="#ProductAside"
-                                   class="Heading Link Link--secondary u-h7">{{ 'product.form.view_info' | t }} {% render 'icon' with 'select-arrow-right' %}</a>
+                                        class="Heading Link Link--secondary u-h7">{{ 'product.form.view_info' | t }} {% render 'icon' with 'select-arrow-right' %}</a>
                                 <a href="#ProductGallery"
-                                   class="Heading Link Link--secondary u-h7">{{ 'product.form.view_images' | t }} {% render 'icon' with 'select-arrow-right' %}</a>
+                                        class="Heading Link Link--secondary u-h7">{{ 'product.form.view_images' | t }} {% render 'icon' with 'select-arrow-right' %}</a>
                             </div>
                         </div>
                     {%- endif -%}
@@ -409,14 +410,14 @@ We allow merchants to use one image as a "featured image" by adding the alt tag 
     {%- assign desk_featured_media = desk_featured_media | default: mobile_featured_media -%}
 
     <div class="Product__FeatureImageWrapper"
-         style="background: url({{ desk_featured_media | img_url: '1x1', format: 'jpg' }})">
+            style="background: url({{ desk_featured_media | img_url: '1x1', format: 'jpg' }})">
         <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }} Image--lazyLoad Image--zoomOut hide-no-js"
-             data-expand="-25"
-             data-bgset="{{ mobile_featured_media | img_url: 'x850' }} [(max-width: 640px)] | {{ desk_featured_media | img_url: '1500x' }}"></div>
+                data-expand="-25"
+                data-bgset="{{ mobile_featured_media | img_url: 'x850' }} [(max-width: 640px)] | {{ desk_featured_media | img_url: '1500x' }}"></div>
 
         <noscript>
             <div class="Product__FeatureImage Product__FeatureImage--{{ section.settings.featured_image_size }}"
-                 style="background-image: url({{ desk_featured_media | img_url: '1500x' }})"></div>
+                    style="background-image: url({{ desk_featured_media | img_url: '1500x' }})"></div>
         </noscript>
     </div>
 

@@ -11628,3 +11628,54 @@ i.icon-swym-wishlist:after {
    align-items: center;
    justify-content: space-between;
  }
+
+ .header__btn-box {
+   position: absolute;
+   right: 2%;
+   bottom: 10%;
+
+   &.-sp--none {
+     @media screen and (max-width: 1139px) {
+       display: none;
+     }
+   }
+   &.-pc--none {
+     @media screen and (min-width: 1140px) {
+       display: none;
+     }
+   }
+   &.-w-max {
+     width: 90%;
+   }
+
+   &.-x {
+     position: static;
+     margin: 32px auto 0;
+   }
+ }
+
+ .header__btn {
+   padding: 8px;
+   background-color: #040404;
+   text-align: center;
+   color: #fff;
+   width: 160px;
+   display: inline-block;
+   font-size: 14px;
+   border-radius: 4px;
+
+   &.-w-max {
+     width: 100%;
+   }
+ }
+
+ .banner {
+   height: 45vh;
+   object-fit: cover;
+   object-position: center;
+   width: 100%;
+
+   @media screen and (max-width: 768px) {
+     height: auto;
+   }
+ }
