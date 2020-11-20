@@ -55,6 +55,14 @@
                     <a href="{{ block.settings.content }}" class="Footer_Button">{{ block.settings.title | escape }}</a>
                   </div>
                 {%- endif -%}
+
+                {%- when 'list' -%}
+                    {%- if linklist != empty -%}
+                        <h2 class="Footer__Title Heading u-h6">{{ block.settings.title | escape }}</h2>
+                    {%- endif -%}
+                {%- if block.settings.content != blank -%}
+                    {{ block.settings.content }}
+                {%- endif -%}
             {%- endcase -%}
           </div>
         {%- endfor -%}
@@ -244,6 +252,22 @@
           "type": "url",
           "id": "content",
           "label": "url"
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "配送方法・送料について",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "見出し"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "内容"
         }
       ]
     }

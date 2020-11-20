@@ -4,7 +4,7 @@
         <div class="FeatureText__ContentWrapper">
             <div class="FeatureText__Content">
                 {%- if section.settings.subheading != blank or section.settings.title != blank -%}
-                    <header class="SectionHeader">
+                    <header id="fadeSection" class="SectionHeader">
                         {%- if section.settings.subheading != blank -%}
                             <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
                         {%- endif -%}

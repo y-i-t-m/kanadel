@@ -13,7 +13,7 @@
     "header_heading_color": "#5c5c5c",
     "header_light_color": "#939393",
     "footer_background": "#efca36",
-    "footer_heading_color": "#5c5c5c",
+    "footer_heading_color": "#ffffff",
     "footer_text_color": "#333333",
     "navigation_background": "#ffffff",
     "navigation_text_color": "#5c5c5c",
@@ -27,10 +27,10 @@
     "uppercase_heading": false,
     "text_font": "century_gothic_n4",
     "base_text_font_size": 15,
-    "show_page_transition": false,
+    "show_page_transition": true,
     "show_button_transition": true,
     "show_image_zooming": true,
-    "show_element_staggering": false,
+    "show_element_staggering": true,
     "search_mode": "product,article",
     "product_show_price_on_hover": true,
     "product_show_secondary_image": false,
@@ -115,7 +115,7 @@
             "type": "text",
             "settings": {
               "title": "HNBについて",
-              "content": "<p>HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。HNBについての紹介文が入ります。<\/p>",
+              "content": "<p>ヒロシマネイバリーブリューイングは、「ビールは笑顔になる飲み物」をコンセプトに、いろいろな方のHAPPYにつながるようなブルワリーに。<br\/>楽しい時も、嬉しい時も、ツライ時も、哀しい時も、広島で、ここで、ビールで、笑顔になる！いつでも、みんなのそばにある醸造所を目指しています。広島の季節のこだわりの素材を使用し、地域資源をつなげてビールを造ります。<\/p>",
               "show_social_media": true
             }
           },
@@ -141,7 +141,7 @@
         "settings": {
           "show_payment_methods": true,
           "show_currency_selector": false,
-          "show_locale_selector": true
+          "show_locale_selector": false
         }
       },
       "slideshow": {
@@ -152,7 +152,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/PC.png",
               "mobile_image": "shopify:\/\/shop_images\/SP.png",
-              "apply_overlay": true,
+              "apply_overlay": false,
               "content_position": "bottomLeft",
               "subheading": "",
               "title": "",
@@ -160,26 +160,28 @@
               "button_2_text": ""
             }
           },
-          "slide-0": {
+          "f4ef143d-f2b0-4046-822f-85baf0f23776": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/main1.png",
-              "apply_overlay": true,
+              "image": "shopify:\/\/shop_images\/PC_2.png",
+              "mobile_image": "shopify:\/\/shop_images\/SP_2_edd385be-ac6a-4fd6-aaa2-8d71ce8bd281.png",
+              "apply_overlay": false,
               "content_position": "bottomLeft",
-              "subheading": "広島日の出ラガー",
-              "title": "hiroshima hinode lager",
-              "button_1_text": "view more",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "",
               "button_2_text": ""
             }
           },
-          "1600237742380": {
+          "cc850d90-7130-49dd-b1c3-7658153a7fb8": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/slide1.jpg",
-              "apply_overlay": true,
-              "content_position": "middleLeft",
-              "subheading": "HIROSHIMA HINODE LAGER",
-              "title": "広島日の出ラガー",
+              "image": "shopify:\/\/shop_images\/156c207f68f7b3240be128078fef5599.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/SP_3_63cb18b3-71b2-4279-b14c-37f8101fa441.png",
+              "apply_overlay": false,
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "title": "",
               "button_1_text": "",
               "button_2_text": ""
             }
@@ -187,8 +189,8 @@
         },
         "block_order": [
           "1601283511415",
-          "slide-0",
-          "1600237742380"
+          "f4ef143d-f2b0-4046-822f-85baf0f23776",
+          "cc850d90-7130-49dd-b1c3-7658153a7fb8"
         ],
         "settings": {
           "show_fullscreen": true,
@@ -459,7 +461,7 @@
         "type": "product-template",
         "settings": {
           "show_share_buttons": true,
-          "show_vendor": true,
+          "show_vendor": false,
           "show_sku": false,
           "show_taxes_included": true,
           "description_below_add_to_cart": true,
@@ -590,6 +592,19 @@
       },
       "page-contact-template": {
         "type": "page-contact-template",
+        "blocks": {
+          "76e18cc4-2b07-4bbb-900c-37dabcadf20e": {
+            "type": "text",
+            "settings": {
+              "title": "お電話番号",
+              "use_long_text": false,
+              "is_required": false
+            }
+          }
+        },
+        "block_order": [
+          "76e18cc4-2b07-4bbb-900c-37dabcadf20e"
+        ],
         "settings": {}
       },
       "1600242624853": {
@@ -599,7 +614,7 @@
             "type": "collection",
             "settings": {
               "collection": "ビール",
-              "title": "BEER",
+              "title": "OUR  ORIGINAL BEER",
               "grid_items_count": 4,
               "button_text": "View all"
             }
@@ -686,6 +701,7 @@
       },
       "1603952860b90d994b": {
         "type": "image-with-text-overlay",
+        "disabled": true,
         "settings": {
           "section_size": "small",
           "image": "shopify:\/\/shop_images\/image1.jpg",
@@ -728,7 +744,7 @@
               "subheading": "RESTAURANT",
               "title": "GoldenGarden",
               "button_text": "View Site",
-              "button_link": "",
+              "button_link": "https:\/\/www.golden-garden.tv\/",
               "apply_overlay": false,
               "sns_facebook_link": "https:\/\/www.facebook.com\/goldengarden\/",
               "sns_twitter_link": "http:\/\/twitter.com\/GOLDENGARDEN_07",
@@ -746,7 +762,7 @@
               "subheading": "RESTAURANT",
               "title": "RAKU BEER",
               "button_text": "View Site",
-              "button_link": "",
+              "button_link": "http:\/\/rakubeer.jugem.jp\/",
               "apply_overlay": false,
               "sns_facebook_link": "https:\/\/www.facebook.com\/rakubeer\/",
               "sns_twitter_link": "https:\/\/twitter.com\/rakubeer",
@@ -785,17 +801,16 @@
       "16045415537a63041d": {
         "type": "banner-link",
         "settings": {
-          "background": "#ffffff",
-          "text_color": "#1c1b1b",
-          "block_size": "small",
-          "title": "Your story",
-          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-          "button_label": "",
-          "show_parallax": true
+          "image": "shopify:\/\/shop_images\/subsc_banner.jpg",
+          "mobile_image": "shopify:\/\/shop_images\/subsc_banner_sp.jpg",
+          "banner_link": "http:\/\/google.com",
+          "content": "<p>定期購入・頒布会につきましてはただいま準備中です。ご利用開始まで今しばらくお待ちください。<\/p>",
+          "disabled": false
         }
       },
       "1604624057ac8c7fe9": {
         "type": "featured-collections",
+        "disabled": true,
         "blocks": {
           "1604624057ac8c7fe9-0": {
             "type": "collection",
@@ -809,32 +824,6 @@
         },
         "block_order": [
           "1604624057ac8c7fe9-0"
-        ],
-        "settings": {
-          "title": "",
-          "layout_mode": "grid",
-          "show_product_info": true,
-          "show_vendor": false,
-          "show_color_swatch": false,
-          "grid_mobile_items_per_row": "2",
-          "grid_desktop_items_per_row": 4
-        }
-      },
-      "1604641037b9e463db": {
-        "type": "featured-collections",
-        "blocks": {
-          "1604641037a9c0ef02-0": {
-            "type": "collection",
-            "settings": {
-              "collection": "ビール",
-              "title": "BEER",
-              "grid_items_count": 4,
-              "button_text": "View all"
-            }
-          }
-        },
-        "block_order": [
-          "1604641037a9c0ef02-0"
         ],
         "settings": {
           "title": "",
@@ -865,6 +854,41 @@
           "show_category": false,
           "button_text": "View all"
         }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "collections_to_show": "all",
+          "image_size": "normal",
+          "add_spacing": true,
+          "expand_collection": false,
+          "apply_overlay": true,
+          "text_color": "#ffffff",
+          "button_color": "#363636"
+        }
+      },
+      "160491410628d97f2c": {
+        "type": "banner-link",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/goods_banner.jpg",
+          "mobile_image": "shopify:\/\/shop_images\/goods_banner_sp.jpg",
+          "content": "",
+          "disabled": false
+        }
+      },
+      "16049141206c163d46": {
+        "type": "image-with-text-overlay",
+        "settings": {
+          "section_size": "large",
+          "image": "shopify:\/\/shop_images\/goods_banner.jpg",
+          "text_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_opacity": 0,
+          "subheading": "",
+          "title": "",
+          "content": ""
+        }
       }
     },
     "content_for_index": [
@@ -873,9 +897,10 @@
       "1603952542dfd0c852",
       "1598610356232",
       "1603952860b90d994b",
-      "1604641037b9e463db",
       "1598610418832",
       "1604624057ac8c7fe9",
+      "16049141206c163d46",
+      "160491410628d97f2c",
       "1599800127703",
       "16045415537a63041d",
       "1604473494fae1f760",

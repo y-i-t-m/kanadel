@@ -26,9 +26,31 @@
 
 //　外部のサイトへ飛ぶ際は、target="_blank"になるように設定
 let links = document.links;
-for (let i = 0, linksLength = links.length ; i < linksLength ; i++) {
+for (let i = 0, linksLength = links.length; i < linksLength; i++) {
   if (links[i].hostname !== window.location.hostname) {
     links[i].target = '_blank';
     links[i].rel = 'noreferrer noopener';
   }
 }
+
+const fadeSection = document.getElementById("fadeSection");
+const options = {
+  root: null,
+  rootMargin: "0px 0px -30%",
+  threshold: 0
+}
+
+const fadeIn = (target) => {
+  target.classList.add('op');
+};
+
+const observeUse = (entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      fadeIn(entry.target);
+    }
+  });
+};
+
+const observer = new IntersectionObserver(observeUse, options);
+observer.observe(fadeSection);
