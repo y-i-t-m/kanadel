@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ba1851d-ca28-459e-8719-d7a48f2c609c" name="デフォルト変更リスト" comment="">
-      <change afterPath="$PROJECT_DIR$/snippets/breadcrumbs.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snippets/hextom_tms_dropdown.liquid" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/page.retail-store.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/goods_banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/goods_banner.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/goods_banner_sp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/goods_banner_sp.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/theme.scss.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/assets/theme.scss.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/ja.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/blog-posts.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/blog-posts.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/collection-template.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/collection-template.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/featured-collections.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/featured-collections.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/featured-product.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/featured-product.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/footer.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/footer.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/news-posts.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/news-posts.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/product-recommendations.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/product-recommendations.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/product-template.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/product-template.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/recently-viewed-products.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/recently-viewed-products.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/shop-now.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/shop-now.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/shop-the-look.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/shop-the-look.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/text-with-image.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/text-with-image.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/banner-link.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/banner-link.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snippets/product-meta.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/product-meta.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product.liquid" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +67,8 @@
       <workItem from="1601438999684" duration="5384000" />
       <workItem from="1601857223661" duration="3000" />
       <workItem from="1604454816746" duration="66788000" />
-      <workItem from="1605832550160" duration="16263000" />
+      <workItem from="1605832550160" duration="24370000" />
+      <workItem from="1606279767974" duration="818000" />
     </task>
     <servers />
   </component>
@@ -120,10 +106,10 @@
     <state x="2604" y="95" width="1236" height="991" key="dock-window-3/0.0.1280.800/1280.0.2560.1080@0.0.1280.800" timestamp="1604968771442" />
     <state x="2604" y="44" width="1236" height="991" key="dock-window-3/49.0.1231.800/1280.23.2560.1057@49.0.1231.800" timestamp="1604906115660" />
     <state x="2586" y="57" width="1236" height="991" key="dock-window-3/49.23.1231.777/1280.23.2560.1057@49.23.1231.777" timestamp="1604904066121" />
-    <state x="219" y="156" width="860" height="622" key="find.popup" timestamp="1605861434944">
+    <state x="236" y="150" width="860" height="622" key="find.popup" timestamp="1606443933922">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="219" y="156" width="860" height="622" key="find.popup/0.0.1280.800/1280.0.2560.1080@0.0.1280.800" timestamp="1605861434944" />
+    <state x="236" y="150" width="860" height="622" key="find.popup/0.0.1280.800/1280.0.2560.1080@0.0.1280.800" timestamp="1606443933922" />
     <state x="191" y="178" width="828" height="622" key="find.popup/49.0.1231.800/1280.23.2560.1057@49.0.1231.800" timestamp="1604900099140" />
     <state x="378" y="354" key="scopes" timestamp="1605837092265">
       <screen x="0" y="0" width="1280" height="800" />
