@@ -13,7 +13,7 @@
     "header_heading_color": "#5c5c5c",
     "header_light_color": "#939393",
     "footer_background": "#efca36",
-    "footer_heading_color": "#ffffff",
+    "footer_heading_color": "#fafafa",
     "footer_text_color": "#333333",
     "navigation_background": "#ffffff",
     "navigation_text_color": "#5c5c5c",
@@ -22,10 +22,10 @@
     "secondary_elements_background": "#5c5c5c",
     "secondary_elements_text_color": "#ffffff",
     "featured_background": "#ffffff",
-    "heading_font": "futura_n4",
+    "heading_font": "sans-serif",
     "heading_size": "large",
     "uppercase_heading": false,
-    "text_font": "century_gothic_n4",
+    "text_font": "sans-serif",
     "base_text_font_size": 15,
     "show_page_transition": true,
     "show_button_transition": true,
@@ -95,7 +95,7 @@
           "use_sticky_header": true,
           "logo": "shopify:\/\/shop_images\/logo.png",
           "logo_max_width": 350,
-          "mobile_logo_max_width": 200,
+          "mobile_logo_max_width": 180,
           "show_currency_selector": true,
           "show_locale_selector": true,
           "navigation_menu": "main-menu",
@@ -517,6 +517,7 @@
       },
       "1598610356232": {
         "type": "text-with-image",
+        "disabled": true,
         "settings": {
           "subheading": "OUR CONCEPT",
           "title": "NO BEER,NO LIFE.",
@@ -532,8 +533,8 @@
           "1598610418832-0": {
             "type": "collection",
             "settings": {
-              "collection": "gift",
-              "title": "GIFT",
+              "collection": "セット",
+              "title": "SET",
               "grid_items_count": 4,
               "button_text": "View all"
             }
@@ -543,7 +544,7 @@
           "1598610418832-0"
         ],
         "settings": {
-          "title": "ギフト",
+          "title": "セット",
           "layout_mode": "grid",
           "show_product_info": true,
           "show_vendor": false,
@@ -954,77 +955,87 @@
       "page-faq-template": {
         "type": "page-faq-template",
         "blocks": {
-          "page-faq-template-0": {
+          "912dbb41-14ce-4198-8f8a-33ea57d4be97": {
             "type": "separator",
             "settings": {
-              "title": "Shipping"
+              "title": "よくある質問"
             }
           },
           "page-faq-template-1": {
             "type": "question",
             "settings": {
-              "title": "Do you ship overseas?",
-              "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+              "title": "いつ発送になりますか?",
+              "answer": "<p>ご注文日から 5 日以内(年末年始除く毎週月〜金曜日)に発送いたします。但し、お支払いが銀行振込の場合、ご入金確認日から 5 日以内に発送となります。なお、万一商品の在庫が確保できないなど遅延の場合には、あらかじめこちらからメールにてご連絡させていただきますが、その際は何卒ご容赦願います。また、運送中の商品破損による再発送、天候や道路事情など、不測の事態による遅配はご容赦下さい。<br\/>※品質保持の為、ビールはクール便でのお届けとなります。<\/p>"
             }
           },
           "page-faq-template-2": {
             "type": "question",
             "settings": {
-              "title": "How long will it take to get my order?",
-              "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+              "title": "会員登録をしないと注文できないのですか?",
+              "answer": "<p>会員登録をしなくても、ゲストユーザーとしてご注文いただけます。<\/p>"
             }
           },
           "page-faq-template-3": {
             "type": "question",
             "settings": {
-              "title": "What shipping carriers do you use?",
-              "answer": "<p>We use all major carriers, and local courier partners. You’ll be asked to select a delivery method during checkout.<\/p>"
-            }
-          },
-          "page-faq-template-4": {
-            "type": "separator",
-            "settings": {
-              "title": "Product"
+              "title": "プレゼント用の包装はできますか?",
+              "answer": "<p>現在、プレゼント用の包装サービスはございません。予めご了承ください。<\/p>"
             }
           },
           "page-faq-template-5": {
             "type": "question",
             "settings": {
-              "title": "Can I return my product?",
-              "answer": "<p>We always aim for make sure our customers love our products, but if you do need to return an order, we’re happy to help. Just email us directly and we’ll take you through the process.<\/p>"
+              "title": "ボトルビールの返品はできますか?",
+              "answer": "<p>ボトルビールの返品・返金はできかねます。但し、ボトルの破損、弊社の手違いによる不良品の場合にのみ交換いたします。詳細はこちらをご確認ください。<\/p>"
             }
           },
           "page-faq-template-6": {
             "type": "question",
             "settings": {
-              "title": "Can I get my product personalized?",
-              "answer": "<p>It depends on the creator and the product. All options are outlined on the product page, so look out for customization options there.<\/p>"
-            }
-          },
-          "page-faq-template-7": {
-            "type": "separator",
-            "settings": {
-              "title": "Other"
+              "title": "オンラインショップ以外でも買えるの?",
+              "answer": "<p>オンラインショップの他、直接取引している小売店等で販売されています。また、広島市中区にある直営店「Craftbeer と炭火 はればれ」でも営業時間内に限り直接お買い求めいただけます。 直営店の営業日・営業時間に関してはこちらをご確認ください。<\/p>"
             }
           },
           "page-faq-template-8": {
             "type": "question",
             "settings": {
-              "title": "Any question?",
-              "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+              "title": "商品を仕入れて販売することはできますか?",
+              "answer": "<p>卸販売も承っております。まずは「業務店様はこちら」からお問合せください。<\/p>"
+            }
+          },
+          "8d33232f-188a-4522-8045-d8ae24476fdb": {
+            "type": "question",
+            "settings": {
+              "title": "ボトルビールの保管方法は?",
+              "answer": "<p>すべて無濾過・非加熱処理のため、10度以下の冷蔵保管でお願いいたします。<\/p>"
+            }
+          },
+          "f27a54c1-1386-4d47-a478-9aad9f0bbf33": {
+            "type": "question",
+            "settings": {
+              "title": "瓶の底の濁りは何?",
+              "answer": "<p>弊社クラフトビールは、すべて無濾過・非加熱処理のため酵母が残っており、活動を終えた酵母が澱として底部分に沈殿することがあります。一緒に飲まれても害はありませんが、気になられる場合、ボトルに澱を残すようにグラスに注ぎ、お召し上がりください。<\/p>"
+            }
+          },
+          "0ae39120-003f-44c8-95d7-72cc508e7074": {
+            "type": "question",
+            "settings": {
+              "title": "空になったボトルは回収してもらえますか?",
+              "answer": "<p>醸造所での空瓶の回収は行っておりません。各自治体のごみ処理のきまりに従い、お客様自身で処分をしていただけますようお願いいたします。<\/p>"
             }
           }
         },
         "block_order": [
-          "page-faq-template-0",
+          "912dbb41-14ce-4198-8f8a-33ea57d4be97",
           "page-faq-template-1",
           "page-faq-template-2",
           "page-faq-template-3",
-          "page-faq-template-4",
           "page-faq-template-5",
           "page-faq-template-6",
-          "page-faq-template-7",
-          "page-faq-template-8"
+          "page-faq-template-8",
+          "8d33232f-188a-4522-8045-d8ae24476fdb",
+          "f27a54c1-1386-4d47-a478-9aad9f0bbf33",
+          "0ae39120-003f-44c8-95d7-72cc508e7074"
         ],
         "settings": {}
       },
@@ -1067,10 +1078,67 @@
       "1606186358bd43de7c": {
         "type": "banner-link",
         "settings": {
-          "image": "shopify:\/\/shop_images\/2_r2_c2_aeda6078-b11f-4955-ba6f-774c3d4bc061.jpg",
-          "mobile_image": "shopify:\/\/shop_images\/2_r4_c3.jpg",
+          "image": "shopify:\/\/shop_images\/3.jpg",
+          "mobile_image": "shopify:\/\/shop_images\/sp.jpg",
           "content": "",
           "disabled": false
+        }
+      },
+      "1606875963fc1e0767": {
+        "type": "shop-the-look",
+        "disabled": true,
+        "blocks": {
+          "1606875963fc1e0767-0": {
+            "type": "look",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/AKI_1916.jpg",
+              "dot_style": "light",
+              "product_1": "グラウラーのコピー",
+              "product_1_horizontal_position": 23,
+              "product_1_vertical_position": 56,
+              "product_2": "",
+              "product_2_horizontal_position": 45,
+              "product_2_vertical_position": 65,
+              "product_3": "",
+              "product_3_horizontal_position": 70,
+              "product_3_vertical_position": 50
+            }
+          }
+        },
+        "block_order": [
+          "1606875963fc1e0767-0"
+        ],
+        "settings": {
+          "subheading": "Shop",
+          "title": "Our looks",
+          "show_mobile_product_info": false
+        }
+      },
+      "16068847743dd46707": {
+        "type": "image-with-text-block",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/akikophotography-6300.jpg",
+          "background": "#ffffff",
+          "text_color": "#1c1b1b",
+          "block_size": "large",
+          "title": "NO BEER,NO LIFE.",
+          "content": "<p>HIROSHIMA NEIGHBORLY BREWING（ヒロシマネイバリーブリューイング）は、「ビールは笑顔になる飲み物」をコンセプトにした醸造所です。<\/p><p>広島の季節のこだわりの素材を使用し、地域資源を活用したビールを製造・提供いたします。<\/p>",
+          "button_label": "",
+          "show_parallax": true
+        }
+      },
+      "1606886374baba3133": {
+        "type": "image-with-text-block",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/1.jpg",
+          "background": "rgba(0,0,0,0)",
+          "text_color": "#000000",
+          "block_size": "normal",
+          "title": "NO BEER,NO LIFE.",
+          "content": "<p>HIROSHIMA NEIGHBORLY BREWING（ヒロシマネイバリーブリューイング）は、「ビールは笑顔になる飲み物」をコンセプトにした醸造所です。<\/p><p>広島の季節のこだわりの素材を使用し、地域資源を活用したビールを製造・提供いたします。<\/p>",
+          "button_label": "",
+          "show_parallax": true
         }
       }
     },
@@ -1078,7 +1146,9 @@
       "slideshow",
       "1600242624853",
       "1603952542dfd0c852",
+      "1606886374baba3133",
       "1598610356232",
+      "16068847743dd46707",
       "1603952860b90d994b",
       "1598610418832",
       "1605855134365e42db",
@@ -1091,7 +1161,8 @@
       "1604473494fae1f760",
       "1599800079542",
       "1604642586f25826c6",
-      "160448244264684788"
+      "160448244264684788",
+      "1606875963fc1e0767"
     ]
   },
   "presets": {
