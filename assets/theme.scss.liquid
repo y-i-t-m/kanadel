@@ -2900,7 +2900,7 @@ $drawer-header-height: 50px;
 
 .Form--spacingTight {
   .Form__Item {
-    margin-bottom: 15px;
+    margin-bottom: 24px;
   }
 
   .Form__Alert {
@@ -4799,6 +4799,11 @@ select::-ms-expand {
   margin: 35px 0;
 }
 
+.pageHeader.content-narrow {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
 .PageHeader--withBackground {
   display: flex;
   margin: 0;
@@ -4874,6 +4879,11 @@ select::-ms-expand {
 @include av-mq('tablet-and-up') {
   .PageHeader {
     margin: 50px 0;
+  }
+
+  .pageHeader.content-narrow {
+    max-width: 1320px;
+    margin: 0 auto;
   }
 
   .PageHeader--withBackground {
@@ -7541,6 +7551,9 @@ $vertical-spacing-two-products-per-row: 0px;
   .ShopNowGrid .FeaturedQuote {
     margin: 60px -50px -90px -50px;
   }
+  .ImageHero__Image.-sp-none {
+    width: auto;
+  }
 }
 
 @include av-mq('tablet-and-up') {
@@ -8581,6 +8594,7 @@ $vertical-spacing-two-products-per-row: 0px;
   background-size: cover;
   background-position: center;
 }
+
 
 @include av-mq('lap-and-up') {
   @media (-moz-touch-enabled: 0), (hover: hover) {
@@ -11627,7 +11641,7 @@ i.icon-swym-wishlist:after {
 }
 
 .mt-16 {
-  margin-top: 16px;
+  margin-top: 16px !important;
 }
 
 .-disabled {
@@ -11691,7 +11705,6 @@ i.icon-swym-wishlist:after {
 }
 
 .banner {
-  height: 70vh;
   object-fit: cover;
   object-position: center;
   width: 100%;
@@ -11744,7 +11757,8 @@ i.icon-swym-wishlist:after {
 }
 
 .page-nav {
-  width: 60%;
+  width: 100%;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -11781,5 +11795,75 @@ i.icon-swym-wishlist:after {
 
 .guide_section {
   padding-top: 4rem;
-  padding-bottom: 4rem;
+}
+
+.guide_section__inner {
+  padding-left: 1rem;
+}
+
+.guide_section p {
+  margin-bottom: .75rem !important;
+  letter-spacing: .1em !important;
+  font-size: 1rem !important;
+}
+
+.guide_section img {
+  margin: 0 !important;
+}
+
+.guide_section__span {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.guide_section .margin-narrow {
+  margin-bottom: .75rem !important;
+}
+
+@include av-mq('phone') {
+  .page-nav {
+    width: 100%;
+  }
+
+  .page-nav__list {
+    display: block;
+  }
+
+  .page-nav__item {
+    max-width: none;
+  }
+}
+
+.mt-24 {
+  margin-top: 24px !important;
+}
+
+.fz-20 {
+  font-size: 20px;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.contact-group {
+  padding: 2rem;
+  background-color: #eee;
+}
+
+.contact-group p {
+  margin-bottom: 0 !important;
+  font-size: 14px;
 }

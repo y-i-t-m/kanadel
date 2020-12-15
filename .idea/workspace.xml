@@ -3,6 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="0ba1851d-ca28-459e-8719-d7a48f2c609c" name="デフォルト変更リスト" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/goods_banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/goods_banner.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/goods_banner_sp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/goods_banner_sp.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/theme.scss.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/assets/theme.scss.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/theme.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/layout/theme.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locales/ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/ja.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/banner-link.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/banner-link.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/header.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/header.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/image-with-text-block.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/image-with-text-block.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/page-contact-template.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/page-contact-template.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/page-faq-template.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/page-faq-template.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/sidebar-menu.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/sidebar-menu.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/product-form.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/product-form.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/page.guid-list.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page.guid-list.liquid" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +77,9 @@
       <workItem from="1604454816746" duration="66788000" />
       <workItem from="1605832550160" duration="24370000" />
       <workItem from="1606279767974" duration="23793000" />
+      <workItem from="1607301514098" duration="2543000" />
+      <workItem from="1607561311980" duration="5048000" />
+      <workItem from="1607906233706" duration="21645000" />
     </task>
     <servers />
   </component>
@@ -72,47 +88,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="383" y="200" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601440083653">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="383" y="200" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.800/1280.0.2560.1080@0.0.1280.800" timestamp="1601440083653" />
-    <state x="232" y="1" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1601361915160">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="232" y="1" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1280.800/1280.0.2560.1080@0.0.1280.800" timestamp="1601361915160" />
-    <state x="328" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606988667004">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="328" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.800/1280.0.2560.1080@0.0.1280.800" timestamp="1606988667004" />
-    <state x="100" y="100" width="1080" height="600" key="DiffContextDialog" timestamp="1604456391957">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="100" y="100" width="1080" height="600" key="DiffContextDialog/0.0.1280.800/1280.0.2560.1080@0.0.1280.800" timestamp="1604456391957" />
-    <state x="2709" y="190" width="951" height="1025" key="dock-window-1" timestamp="1604463513108">
-      <screen x="1280" y="23" width="2560" height="1057" />
-    </state>
-    <state x="2889" y="33" width="951" height="1025" key="dock-window-1/43.0.1237.800/1280.23.2560.1057@43.0.1237.800" timestamp="1604456735566" />
-    <state x="2709" y="190" width="951" height="1025" key="dock-window-1/43.23.1237.777/1280.23.2560.1057@43.23.1237.777" timestamp="1604463513108" />
-    <state x="1898" y="172" width="1756" height="950" key="dock-window-2" timestamp="1604565601131">
-      <screen x="1280" y="0" width="2560" height="1080" />
-    </state>
-    <state x="1898" y="172" width="1756" height="950" key="dock-window-2/0.0.1280.800/1280.0.2560.1080@0.0.1280.800" timestamp="1604565601131" />
-    <state x="2604" y="95" width="1236" height="991" key="dock-window-3" timestamp="1604968771442">
-      <screen x="1280" y="0" width="2560" height="1080" />
-    </state>
-    <state x="2604" y="95" width="1236" height="991" key="dock-window-3/0.0.1280.800/1280.0.2560.1080@0.0.1280.800" timestamp="1604968771442" />
-    <state x="2604" y="44" width="1236" height="991" key="dock-window-3/49.0.1231.800/1280.23.2560.1057@49.0.1231.800" timestamp="1604906115660" />
-    <state x="2586" y="57" width="1236" height="991" key="dock-window-3/49.23.1231.777/1280.23.2560.1057@49.23.1231.777" timestamp="1604904066121" />
-    <state x="296" y="178" width="860" height="622" key="find.popup" timestamp="1606986184540">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="296" y="178" width="860" height="622" key="find.popup/0.0.1280.800/1280.0.2560.1080@0.0.1280.800" timestamp="1606986184540" />
-    <state x="191" y="178" width="828" height="622" key="find.popup/49.0.1231.800/1280.23.2560.1057@49.0.1231.800" timestamp="1604900099140" />
-    <state x="378" y="354" key="scopes" timestamp="1605837092265">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="378" y="354" key="scopes/0.0.1280.800/1280.0.2560.1080@0.0.1280.800" timestamp="1605837092265" />
   </component>
 </project>

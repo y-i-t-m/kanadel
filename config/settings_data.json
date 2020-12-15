@@ -33,9 +33,9 @@
     "show_element_staggering": true,
     "search_mode": "product,article",
     "product_show_price_on_hover": true,
-    "product_show_secondary_image": false,
-    "product_info_alignment": "left",
-    "product_image_size": "natural",
+    "product_show_secondary_image": true,
+    "product_info_alignment": "center",
+    "product_image_size": "short",
     "product_list_horizontal_spacing": "large",
     "product_list_vertical_spacing": "small",
     "cart_type": "drawer",
@@ -97,7 +97,7 @@
           "logo_max_width": 350,
           "mobile_logo_max_width": 180,
           "show_currency_selector": true,
-          "show_locale_selector": true,
+          "show_locale_selector": false,
           "navigation_menu": "main-menu",
           "navigation_style": "center",
           "show_icons": true,
@@ -121,30 +121,30 @@
             "type": "list",
             "settings": {
               "title": "配送方法・送料について",
-              "content": "<p>ヤマト<\/p><p>冷蔵便注文本数別送料（税込）<\/p><p>●330mlボトル12本まで1,460円　北海道・九州1,100円<\/p><p>東北・関東・中部1,190円<\/p><p>近畿1,290円<\/p><p>中国・四国1,520円　沖縄<\/p>"
-            }
-          },
-          "footer-0": {
-            "type": "text",
-            "settings": {
-              "title": "HNBについて",
-              "content": "<p>ヒロシマネイバリーブリューイングは、「ビールは笑顔になる飲み物」をコンセプトに、いろいろな方のHAPPYにつながるようなブルワリーに。<br\/>楽しい時も、嬉しい時も、ツライ時も、哀しい時も、広島で、ここで、ビールで、笑顔になる！いつでも、みんなのそばにある醸造所を目指しています。広島の季節のこだわりの素材を使用し、地域資源をつなげてビールを造ります。<\/p>",
-              "show_social_media": true
+              "content": "<p>・配送は、日本国内に限らせていただきます。<\/p><p>・ビールは「クール便」、その他は商品によってメール便、混合の場合は「クール便」にてお届けいたします。<\/p><p>・配送会社のご指定はできません。<\/p><p>・大量に購入したい等のご希望は、お問合せからご連絡ください<\/p><p><a href=\"\/pages\/guide\" title=\"ご利用案内\">詳しくはこちら<\/a><\/p>"
             }
           },
           "bfcea0a5-efa5-429c-835d-3bb38b002637": {
             "type": "FooterButton",
             "settings": {
               "title": "業務店様はこちら",
-              "content": "http:\/\/google.com"
+              "content": "shopify:\/\/pages\/contact"
+            }
+          },
+          "footer-0": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "content": "",
+              "show_social_media": true
             }
           }
         },
         "block_order": [
           "footer-1",
           "7199dfbb-8914-4578-9ad5-eeddfefc4c00",
-          "footer-0",
-          "bfcea0a5-efa5-429c-835d-3bb38b002637"
+          "bfcea0a5-efa5-429c-835d-3bb38b002637",
+          "footer-0"
         ],
         "settings": {
           "show_payment_methods": true,
@@ -442,7 +442,7 @@
           "filter_menu": "",
           "grid_items_per_page": 16,
           "grid_mobile_items_per_row": "2",
-          "grid_desktop_items_per_row": 4
+          "grid_desktop_items_per_row": 3
         }
       },
       "recently-viewed-products": {
@@ -480,7 +480,7 @@
           "show_inventory_quantity": false,
           "inventory_quantity_threshold": 3,
           "show_price_in_button": true,
-          "show_payment_button": true,
+          "show_payment_button": false,
           "image_size": "medium",
           "stack_images": false,
           "show_thumbnails": true,
@@ -529,6 +529,7 @@
       },
       "1598610418832": {
         "type": "featured-collections",
+        "disabled": true,
         "blocks": {
           "1598610418832-0": {
             "type": "collection",
@@ -545,12 +546,12 @@
         ],
         "settings": {
           "title": "セット",
-          "layout_mode": "grid",
-          "show_product_info": true,
+          "layout_mode": "carousel",
+          "show_product_info": false,
           "show_vendor": false,
           "show_color_swatch": false,
-          "grid_mobile_items_per_row": "2",
-          "grid_desktop_items_per_row": 4
+          "grid_mobile_items_per_row": "1",
+          "grid_desktop_items_per_row": 3
         }
       },
       "1599800079542": {
@@ -591,33 +592,86 @@
         ],
         "settings": {
           "title": "オリジナルグッズ",
-          "layout_mode": "grid",
+          "layout_mode": "carousel",
           "show_product_info": true,
           "show_vendor": false,
           "show_color_swatch": false,
           "grid_mobile_items_per_row": "2",
-          "grid_desktop_items_per_row": 4
+          "grid_desktop_items_per_row": 2
         }
       },
       "page-contact-template": {
         "type": "page-contact-template",
         "blocks": {
-          "76e18cc4-2b07-4bbb-900c-37dabcadf20e": {
+          "b1a32e62-ebca-4d56-96ed-4ccb7ef8a5ef": {
             "type": "text",
             "settings": {
-              "title": "お電話番号",
+              "title": "郵便番号",
               "use_long_text": false,
               "is_required": false
+            }
+          },
+          "7deb3720-2c9e-4dfc-bd56-14c5431252b2": {
+            "type": "dropdown",
+            "settings": {
+              "title": "都道府県",
+              "values": "北海道, 青森県, 岩手県,宮城県, 秋田県, 山形県,福島県, 茨城県, 栃木県,群馬県, 埼玉県, 千葉県,東京都, 神奈川県, 新潟県,富山県, 石川県, 福井県,山梨県, 長野県, 岐阜県,静岡県, 愛知県, 三重県,滋賀県, 京都府, 大阪府,兵庫県, 奈良県, 和歌山県,鳥取県, 島根県, 岡山県,広島県, 山口県, 徳島県,香川県, 愛媛県, 高知県,福岡県, 佐賀県, 長崎県,熊本県, 大分県, 宮崎県,鹿児島県, 沖縄県"
+            }
+          },
+          "c2ab067c-1dbb-469a-b657-df2a6c117b49": {
+            "type": "text",
+            "settings": {
+              "title": "市区町村名",
+              "use_long_text": false,
+              "is_required": false
+            }
+          },
+          "d7c97a49-a1c9-4c84-90b6-436711d3d731": {
+            "type": "text",
+            "settings": {
+              "title": "番地",
+              "use_long_text": false,
+              "is_required": false
+            }
+          },
+          "90b3b46d-2cbf-4c64-9b82-9662854e5f70": {
+            "type": "text",
+            "settings": {
+              "title": "ビル・建物名",
+              "use_long_text": false,
+              "is_required": false
+            }
+          },
+          "bff8fd3f-3c01-4af5-8042-89b81ef65243": {
+            "type": "text",
+            "settings": {
+              "title": "注文番号",
+              "use_long_text": false,
+              "is_required": false
+            }
+          },
+          "d4e0c101-b3ae-43d6-a16a-2f8525e8b544": {
+            "type": "dropdown",
+            "settings": {
+              "title": "ご用件",
+              "values": "ご購入について,サイトについて, 業務用の取り扱いについて,会員登録について,その他"
             }
           }
         },
         "block_order": [
-          "76e18cc4-2b07-4bbb-900c-37dabcadf20e"
+          "b1a32e62-ebca-4d56-96ed-4ccb7ef8a5ef",
+          "7deb3720-2c9e-4dfc-bd56-14c5431252b2",
+          "c2ab067c-1dbb-469a-b657-df2a6c117b49",
+          "d7c97a49-a1c9-4c84-90b6-436711d3d731",
+          "90b3b46d-2cbf-4c64-9b82-9662854e5f70",
+          "bff8fd3f-3c01-4af5-8042-89b81ef65243",
+          "d4e0c101-b3ae-43d6-a16a-2f8525e8b544"
         ],
         "settings": {}
       },
       "1600242624853": {
         "type": "featured-collections",
+        "disabled": true,
         "blocks": {
           "1600242624853-0": {
             "type": "collection",
@@ -634,12 +688,12 @@
         ],
         "settings": {
           "title": "HNBオリジナルクラフトビール",
-          "layout_mode": "grid",
-          "show_product_info": true,
+          "layout_mode": "carousel",
+          "show_product_info": false,
           "show_vendor": false,
           "show_color_swatch": false,
-          "grid_mobile_items_per_row": "2",
-          "grid_desktop_items_per_row": 4
+          "grid_mobile_items_per_row": "1",
+          "grid_desktop_items_per_row": 5
         }
       },
       "blog-template": {
@@ -821,9 +875,12 @@
       },
       "16045415537a63041d": {
         "type": "banner-link",
+        "disabled": true,
         "settings": {
           "image": "shopify:\/\/shop_images\/subsc_banner.jpg",
           "mobile_image": "shopify:\/\/shop_images\/subsc_banner_sp.jpg",
+          "first_title": "",
+          "second_title": "",
           "banner_link": "http:\/\/google.com",
           "content": "<p>定期購入・頒布会につきましてはただいま準備中です。ご利用開始まで今しばらくお待ちください。<\/p>",
           "disabled": false
@@ -893,11 +950,11 @@
           "3d5d1185-9bf6-41de-8bc7-393ddad78ba2": {
             "type": "collection",
             "settings": {
-              "collection": "gift",
+              "collection": "セット",
               "image_alignment": "center center",
               "content_position": "bottomLeft",
               "subheading": "",
-              "title": "GIFT",
+              "title": "セット商品",
               "button_text": "View products"
             }
           },
@@ -934,6 +991,8 @@
         "settings": {
           "image": "shopify:\/\/shop_images\/goods_banner.jpg",
           "mobile_image": "shopify:\/\/shop_images\/goods_banner_sp.jpg",
+          "first_title": "",
+          "second_title": "",
           "content": "",
           "disabled": false
         }
@@ -955,10 +1014,10 @@
       "page-faq-template": {
         "type": "page-faq-template",
         "blocks": {
-          "912dbb41-14ce-4198-8f8a-33ea57d4be97": {
+          "f1c9a4a0-8a6d-4f27-826e-f90f839fb39a": {
             "type": "separator",
             "settings": {
-              "title": "よくある質問"
+              "title": "お買い物について"
             }
           },
           "page-faq-template-1": {
@@ -966,13 +1025,6 @@
             "settings": {
               "title": "いつ発送になりますか?",
               "answer": "<p>ご注文日から 5 日以内(年末年始除く毎週月〜金曜日)に発送いたします。但し、お支払いが銀行振込の場合、ご入金確認日から 5 日以内に発送となります。なお、万一商品の在庫が確保できないなど遅延の場合には、あらかじめこちらからメールにてご連絡させていただきますが、その際は何卒ご容赦願います。また、運送中の商品破損による再発送、天候や道路事情など、不測の事態による遅配はご容赦下さい。<br\/>※品質保持の為、ビールはクール便でのお届けとなります。<\/p>"
-            }
-          },
-          "page-faq-template-2": {
-            "type": "question",
-            "settings": {
-              "title": "会員登録をしないと注文できないのですか?",
-              "answer": "<p>会員登録をしなくても、ゲストユーザーとしてご注文いただけます。<\/p>"
             }
           },
           "page-faq-template-3": {
@@ -996,11 +1048,78 @@
               "answer": "<p>オンラインショップの他、直接取引している小売店等で販売されています。また、広島市中区にある直営店「Craftbeer と炭火 はればれ」でも営業時間内に限り直接お買い求めいただけます。 直営店の営業日・営業時間に関してはこちらをご確認ください。<\/p>"
             }
           },
+          "60370ea0-5b0d-4419-8d2e-e4f4be2e3fa7": {
+            "type": "separator",
+            "settings": {
+              "title": "会員登録について"
+            }
+          },
+          "page-faq-template-2": {
+            "type": "question",
+            "settings": {
+              "title": "会員登録をしないと注文できないのですか?",
+              "answer": "<p>会員登録をしなくても、ゲストユーザーとしてご注文いただけます。<\/p>"
+            }
+          },
+          "a7e6a710-aa7b-4830-85a6-6fca2cb7a297": {
+            "type": "question",
+            "settings": {
+              "title": "登録している会員情報を変更するにはどうしたらよいですか？",
+              "answer": "<p>以下のフォームより、変更内容をご連絡ください。<\/p><p><a href=\"\/pages\/contact\" title=\"お問合せ\">お問合せはこちらから<\/a><\/p>"
+            }
+          },
+          "ae408399-8483-490a-8a40-5fcc028fe0fa": {
+            "type": "question",
+            "settings": {
+              "title": "会員ページにログインができません。どのようなことが考えられますか？",
+              "answer": "<p>以下の項目についてご確認いただけますよう、お願いいたします。<\/p><p><\/p><p>・当店サイトでの会員登録はお済みでしょうか。<\/p><p>・入力されているメールアドレス、パスワードにお間違いがないかご確認ください。<\/p><p>・パスワードをお忘れの場合は、再設定の手続きをお試しください。<\/p><p><a href=\"\/pages\/contact\" title=\"お問合せ\">パスワードの再設定はこちらから<br\/><\/a><\/p>"
+            }
+          },
+          "12a6821d-9249-4619-8e5b-bbfbed4611aa": {
+            "type": "question",
+            "settings": {
+              "title": "パスワードを忘れてしまった時は、どのようにすればいいでしょうか？",
+              "answer": "<p>以下からパスワード再設定の手続きをお試しください。<\/p><p><a href=\"\/pages\/contact\" title=\"お問合せ\">パスワードの再設定はこちらから<\/a><\/p>"
+            }
+          },
+          "974a9cc9-7a43-4515-a419-7b1b96baa475": {
+            "type": "question",
+            "settings": {
+              "title": "メールアドレスを忘れてしまいました。",
+              "answer": "<p>以下のフォームより、ご連絡ください。ご本人確認をさせていただいたうえで、対応させていただきます。<\/p><p><a href=\"\/pages\/contact\" title=\"お問合せ\">お問合せはこちらから<\/a><\/p>"
+            }
+          },
+          "70779023-e458-44c6-abb6-ad24bf2adb58": {
+            "type": "question",
+            "settings": {
+              "title": "会員ページの登録解除は可能ですか？",
+              "answer": "<p>以下のフォームより、ご連絡ください。1週間ほどお時間をいただくことがございますのでご了承ください。<\/p><p><a href=\"\/pages\/contact\" title=\"お問合せ\">お問合せはこちらから<\/a><\/p>"
+            }
+          },
+          "090256db-d738-46b1-980e-b311b1fce041": {
+            "type": "question",
+            "settings": {
+              "title": "メルマガが届いていますが、注文の際、それとは別に会員登録をしなければいけませんか？",
+              "answer": "<p>「メールマガジン登録」と「会員登録」の登録は別となっているため、メールマガジンをお届けしていても、会員になっていない場合がございます。マイページにログインができれば会員登録ができておりますので、こちらからご確認ください。<\/p><p><\/p><p><a href=\"https:\/\/hiroshima.beer\/account\/login?return_url=%2Faccount\" title=\"https:\/\/hiroshima.beer\/account\/login?return_url=%2Faccount\">マイページのログインはこちらから<\/a><\/p>"
+            }
+          },
+          "617ec10e-56be-4d33-b701-eeb5737249b4": {
+            "type": "separator",
+            "settings": {
+              "title": "商品の販売について"
+            }
+          },
           "page-faq-template-8": {
             "type": "question",
             "settings": {
               "title": "商品を仕入れて販売することはできますか?",
               "answer": "<p>卸販売も承っております。まずは「業務店様はこちら」からお問合せください。<\/p>"
+            }
+          },
+          "1321b78a-4cfe-49ce-b109-51932ea59318": {
+            "type": "separator",
+            "settings": {
+              "title": "ビールについて"
             }
           },
           "8d33232f-188a-4522-8045-d8ae24476fdb": {
@@ -1026,13 +1145,22 @@
           }
         },
         "block_order": [
-          "912dbb41-14ce-4198-8f8a-33ea57d4be97",
+          "f1c9a4a0-8a6d-4f27-826e-f90f839fb39a",
           "page-faq-template-1",
-          "page-faq-template-2",
           "page-faq-template-3",
           "page-faq-template-5",
           "page-faq-template-6",
+          "60370ea0-5b0d-4419-8d2e-e4f4be2e3fa7",
+          "page-faq-template-2",
+          "a7e6a710-aa7b-4830-85a6-6fca2cb7a297",
+          "ae408399-8483-490a-8a40-5fcc028fe0fa",
+          "12a6821d-9249-4619-8e5b-bbfbed4611aa",
+          "974a9cc9-7a43-4515-a419-7b1b96baa475",
+          "70779023-e458-44c6-abb6-ad24bf2adb58",
+          "090256db-d738-46b1-980e-b311b1fce041",
+          "617ec10e-56be-4d33-b701-eeb5737249b4",
           "page-faq-template-8",
+          "1321b78a-4cfe-49ce-b109-51932ea59318",
           "8d33232f-188a-4522-8045-d8ae24476fdb",
           "f27a54c1-1386-4d47-a478-9aad9f0bbf33",
           "0ae39120-003f-44c8-95d7-72cc508e7074"
@@ -1051,6 +1179,7 @@
       },
       "1605855134365e42db": {
         "type": "featured-collections",
+        "disabled": true,
         "blocks": {
           "1605855134365e42db-0": {
             "type": "collection",
@@ -1078,8 +1207,10 @@
       "1606186358bd43de7c": {
         "type": "banner-link",
         "settings": {
-          "image": "shopify:\/\/shop_images\/3.jpg",
-          "mobile_image": "shopify:\/\/shop_images\/sp.jpg",
+          "image": "shopify:\/\/shop_images\/goods_banner_cd2a55e2-9051-4f41-8d7d-4b8671660ca3.jpg",
+          "mobile_image": "shopify:\/\/shop_images\/goods_banner_sp_d976208d-d04c-4a42-bbb3-0c07e6acd993.jpg",
+          "first_title": "",
+          "second_title": "",
           "content": "",
           "disabled": false
         }
@@ -1140,22 +1271,115 @@
           "button_label": "",
           "show_parallax": true
         }
+      },
+      "16073402260f5d2841": {
+        "type": "featured-product",
+        "disabled": true,
+        "settings": {
+          "subheading": "HNBオリジナルクラフトビール",
+          "title": "OUR ORIGINAL BEER",
+          "show_headings_on_mobile": true,
+          "product": "クラフトビール-オンラインフェス-視聴者専用ビール6本セット-送料無料",
+          "show_vendor": false,
+          "show_sku": false,
+          "show_description": false,
+          "description_below_add_to_cart": false,
+          "selector_mode": "dropdown",
+          "show_color_swatch": false,
+          "show_color_carousel": false,
+          "show_quantity_selector": true,
+          "show_inventory_quantity": false,
+          "inventory_quantity_threshold": 0,
+          "show_price_in_button": false,
+          "show_payment_button": true
+        }
+      },
+      "16073906534be68110": {
+        "type": "shop-the-look",
+        "disabled": true,
+        "blocks": {
+          "16073906534be68110-0": {
+            "type": "look",
+            "settings": {
+              "dot_style": "light",
+              "product_1": "",
+              "product_1_horizontal_position": 30,
+              "product_1_vertical_position": 40,
+              "product_2": "",
+              "product_2_horizontal_position": 45,
+              "product_2_vertical_position": 65,
+              "product_3": "",
+              "product_3_horizontal_position": 70,
+              "product_3_vertical_position": 50
+            }
+          },
+          "1cf9217d-9344-44e0-923c-2cee6886fe19": {
+            "type": "look",
+            "settings": {
+              "dot_style": "light",
+              "product_1": "",
+              "product_1_horizontal_position": 15,
+              "product_1_vertical_position": 15,
+              "product_2": "",
+              "product_2_horizontal_position": 50,
+              "product_2_vertical_position": 50,
+              "product_3": "",
+              "product_3_horizontal_position": 85,
+              "product_3_vertical_position": 85
+            }
+          }
+        },
+        "block_order": [
+          "16073906534be68110-0",
+          "1cf9217d-9344-44e0-923c-2cee6886fe19"
+        ],
+        "settings": {
+          "subheading": "HNBオリジナルTシャツ",
+          "title": "ORIGINAL T-SHIRTS",
+          "show_mobile_product_info": false
+        }
+      },
+      "1607567658f2e6a703": {
+        "type": "banner-link",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Coming-Soon1.jpg",
+          "mobile_image": "shopify:\/\/shop_images\/Coming-Soon1.jpg",
+          "first_title": "HNBオリジナルクラフトビール",
+          "second_title": "OUR ORIGINAL BEER",
+          "content": "",
+          "disabled": false
+        }
+      },
+      "1607569152ff8a0e55": {
+        "type": "banner-link",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Coming-Soon1.jpg",
+          "mobile_image": "shopify:\/\/shop_images\/Coming-Soon1.jpg",
+          "first_title": "セット",
+          "second_title": "SET",
+          "content": "",
+          "disabled": false
+        }
       }
     },
     "content_for_index": [
       "slideshow",
       "1600242624853",
+      "1607567658f2e6a703",
+      "16073402260f5d2841",
       "1603952542dfd0c852",
       "1606886374baba3133",
       "1598610356232",
       "16068847743dd46707",
       "1603952860b90d994b",
       "1598610418832",
+      "1607569152ff8a0e55",
       "1605855134365e42db",
       "1604624057ac8c7fe9",
       "16049141206c163d46",
       "1606186358bd43de7c",
       "160491410628d97f2c",
+      "16073906534be68110",
       "1599800127703",
       "16045415537a63041d",
       "1604473494fae1f760",

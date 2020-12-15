@@ -6,13 +6,14 @@
     {%- break -%}
   {%- endif -%}
 {%- endfor -%}
-
+<h1 style="padding-top: 80px;" class="Heading u-h1 text-center pt-narrow">よくある質問</h1>
 {%- capture faq_content -%}
   <div class="Faq">
+
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'separator' -%}
-          <h1 class="Faq__Section Heading u-h1" {{ block.shopify_attributes }}>
+          <h1 class="Faq__Section Heading u-h1 guide_sub_heading" {{ block.shopify_attributes }}>
             <span class="Anchor" id="block-{{ block.id }}"></span>
             {{- block.settings.title | escape -}}
           </h1>
@@ -59,7 +60,7 @@
             </ol>
           </div>
 
-          <div class="PageLayout__Section">
+          <div style="margin-left: 0" class="PageLayout__Section">
             {{- faq_content -}}
           </div>
         </div>
