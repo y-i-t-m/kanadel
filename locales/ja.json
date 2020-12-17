@@ -240,7 +240,7 @@
       "empty_button": "ホームへ戻る",
       "reset": "フィルターをリセット",
       "view_products": "商品を見る",
-      "empty": "{{collection_title}}は空です。"
+      "empty": "{{collection_title}}は現在準備中です。"
     },
     "filter": {
       "title": "フィルター",

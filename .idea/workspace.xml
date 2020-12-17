@@ -3,19 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="0ba1851d-ca28-459e-8719-d7a48f2c609c" name="デフォルト変更リスト" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/goods_banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/goods_banner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/goods_banner_sp.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/goods_banner_sp.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/credit-card.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/credit-card.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/theme.scss.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/assets/theme.scss.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/settings_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layout/theme.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/layout/theme.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locales/ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/ja.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/banner-link.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/banner-link.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/header.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/header.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/image-with-text-block.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/image-with-text-block.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/page-contact-template.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/page-contact-template.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/page-faq-template.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/page-faq-template.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/sidebar-menu.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/sidebar-menu.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/product-form.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/product-form.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/collection-template.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/collection-template.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/list-collections-template.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/list-collections-template.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/page.guid-list.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page.guid-list.liquid" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +72,9 @@
       <workItem from="1606279767974" duration="23793000" />
       <workItem from="1607301514098" duration="2543000" />
       <workItem from="1607561311980" duration="5048000" />
-      <workItem from="1607906233706" duration="21645000" />
+      <workItem from="1607906233706" duration="25004000" />
+      <workItem from="1608078161988" duration="331000" />
+      <workItem from="1608094317470" duration="3110000" />
     </task>
     <servers />
   </component>

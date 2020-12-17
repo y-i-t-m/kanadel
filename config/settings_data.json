@@ -52,7 +52,7 @@
     "social_linkedin": "",
     "social_snapchat": "",
     "social_fancy": "",
-    "social_line_black": "https:\/\/fancy.com\/Shopify",
+    "social_line_black": "https:\/\/lin.ee\/DFopZIx",
     "favicon": "",
     "checkout_header_image": "",
     "checkout_logo_image": "",
@@ -806,7 +806,7 @@
               "sns_facebook_link": "https:\/\/www.facebook.com\/harebarehiroshima",
               "sns_twitter_link": "https:\/\/twitter.com\/harebare_beer",
               "sns_instagram_link": "https:\/\/www.instagram.com\/harebare_hiroshima\/",
-              "line_black": "https:\/\/google.com"
+              "line_black": ""
             }
           },
           "1604473494fae1f760-1": {
@@ -837,9 +837,9 @@
               "subheading": "RESTAURANT",
               "title": "RAKU BEER",
               "button_text": "View Site",
-              "button_link": "http:\/\/rakubeer.jugem.jp\/",
+              "button_link": "https:\/\/www.facebook.com\/rakubeer",
               "apply_overlay": false,
-              "sns_facebook_link": "https:\/\/www.facebook.com\/rakubeer\/",
+              "sns_facebook_link": "",
               "sns_twitter_link": "https:\/\/twitter.com\/rakubeer",
               "sns_instagram_link": "https:\/\/www.instagram.com\/rakubeer\/",
               "line_black": ""
@@ -1038,14 +1038,14 @@
             "type": "question",
             "settings": {
               "title": "ボトルビールの返品はできますか?",
-              "answer": "<p>ボトルビールの返品・返金はできかねます。但し、ボトルの破損、弊社の手違いによる不良品の場合にのみ交換いたします。詳細はこちらをご確認ください。<\/p>"
+              "answer": "<p>ボトルビールの返品・返金はできかねます。但し、ボトルの破損、弊社の手違いによる不良品の場合にのみ交換いたします。<a href=\"\/pages\/guide\" title=\"ご利用案内\">詳細はこちら<\/a>をご確認ください。<\/p>"
             }
           },
           "page-faq-template-6": {
             "type": "question",
             "settings": {
               "title": "オンラインショップ以外でも買えるの?",
-              "answer": "<p>オンラインショップの他、直接取引している小売店等で販売されています。また、広島市中区にある直営店「Craftbeer と炭火 はればれ」でも営業時間内に限り直接お買い求めいただけます。 直営店の営業日・営業時間に関してはこちらをご確認ください。<\/p>"
+              "answer": "<p>オンラインショップの他、直接取引している小売店等で販売されています。また、広島市中区にある直営店「Craftbeer と炭火 はればれ」でも営業時間内に限り直接お買い求めいただけます。 直営店の営業日・営業時間に関しては<a href=\"https:\/\/www.hnb.beer\/index.html\" title=\"https:\/\/www.hnb.beer\/index.html\">こちら<\/a>をご確認ください。<\/p>"
             }
           },
           "60370ea0-5b0d-4419-8d2e-e4f4be2e3fa7": {
@@ -1072,14 +1072,14 @@
             "type": "question",
             "settings": {
               "title": "会員ページにログインができません。どのようなことが考えられますか？",
-              "answer": "<p>以下の項目についてご確認いただけますよう、お願いいたします。<\/p><p><\/p><p>・当店サイトでの会員登録はお済みでしょうか。<\/p><p>・入力されているメールアドレス、パスワードにお間違いがないかご確認ください。<\/p><p>・パスワードをお忘れの場合は、再設定の手続きをお試しください。<\/p><p><a href=\"\/pages\/contact\" title=\"お問合せ\">パスワードの再設定はこちらから<br\/><\/a><\/p>"
+              "answer": "<p>以下の項目についてご確認いただけますよう、お願いいたします。<\/p><p><\/p><p>・当店サイトでの会員登録はお済みでしょうか。<\/p><p>・入力されているメールアドレス、パスワードにお間違いがないかご確認ください。<\/p><p>・パスワードをお忘れの場合は、再設定の手続きをお試しください。<\/p><p><a href=\"https:\/\/hiroshima.beer\/account\/login?return_url=%2Faccount\" title=\"https:\/\/hiroshima.beer\/account\/login?return_url=%2Faccount\">パスワードの再設定はこちらから<br\/><\/a><\/p>"
             }
           },
           "12a6821d-9249-4619-8e5b-bbfbed4611aa": {
             "type": "question",
             "settings": {
               "title": "パスワードを忘れてしまった時は、どのようにすればいいでしょうか？",
-              "answer": "<p>以下からパスワード再設定の手続きをお試しください。<\/p><p><a href=\"\/pages\/contact\" title=\"お問合せ\">パスワードの再設定はこちらから<\/a><\/p>"
+              "answer": "<p>以下からパスワード再設定の手続きをお試しください。<\/p><p><a href=\"https:\/\/hiroshima.beer\/account\/login?return_url=%2Faccount\" title=\"https:\/\/hiroshima.beer\/account\/login?return_url=%2Faccount\">パスワードの再設定はこちらから<\/a><\/p>"
             }
           },
           "974a9cc9-7a43-4515-a419-7b1b96baa475": {
@@ -1113,7 +1113,7 @@
             "type": "question",
             "settings": {
               "title": "商品を仕入れて販売することはできますか?",
-              "answer": "<p>卸販売も承っております。まずは「業務店様はこちら」からお問合せください。<\/p>"
+              "answer": "<p>卸販売も承っております。まずは<a href=\"\/pages\/contact\" title=\"お問合せ\">「業務店様はこちら」<\/a>からお問合せください。<\/p>"
             }
           },
           "1321b78a-4cfe-49ce-b109-51932ea59318": {
