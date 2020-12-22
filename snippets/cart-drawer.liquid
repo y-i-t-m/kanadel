@@ -52,9 +52,24 @@
         {%- if settings.cart_enable_notes or shipping_and_taxes_notice != blank -%}
           {%- if settings.cart_enable_notes -%}
             {%- if cart.note == blank -%}
-              <button type="button" class="Cart__NoteButton" data-action="toggle-cart-note">{{ 'cart.general.add_note' | t }}</button>
-            {%- else -%}
-              <button type="button" class="Cart__NoteButton" data-action="toggle-cart-note">{{ 'cart.general.edit_note' | t }}</button>
+              {% comment %}<button type="button" class="Cart__NoteButton" data-action="toggle-cart-note">{{ 'cart.general.add_note' | t }}</button>{% endcomment %}
+            {% comment %}{%- else -%}{% endcomment %}
+              {% comment %}<button type="button" class="Cart__NoteButton" data-action="toggle-cart-note">{{ 'cart.general.edit_note' | t }}</button>{% endcomment %}
+                {%- if settings.cart_enable_notes -%}
+                    <div class="Cart__OffscreenNoteContainer" aria-hidden="true">
+                        {%- if cart.note == blank -%}
+                            <span class="Cart__NoteButton">{{ 'cart.general.add_note' | t }}</span>
+                        {%- else -%}
+                            <span class="Cart__NoteButton">{{ 'cart.general.edit_note' | t }}</span>
+                        {%- endif -%}
+
+                        <div class="Form__Item _mb-16">
+                            <textarea class="Cart__Note Form__Textarea" name="note" id="cart-note" rows="3" placeholder="{{ 'cart.general.note_placeholder' | t }}" data-scrollable>{{ cart.note }}</textarea>
+                        </div>
+
+                        <button type="button" class="Button Button--primary Button--full" data-action="toggle-cart-note">{{ 'cart.general.save_note' | t }}</button>
+                    </div>
+                {%- endif -%}
             {%- endif -%}
           {%- endif -%}
 
@@ -69,26 +84,26 @@
           {%- endif -%}
         {%- endif -%}
 
-        <button type="submit" name="checkout" class="Cart__Checkout Button Button--primary Button--full">
+        <button type="submit" name="checkout" class="Cart__Checkout Button Button--primary Button--full _mt-0">
           <span>{{- 'cart.general.checkout' | t -}}</span>
           <span class="Button__SeparatorDot"></span>
           <span>{{ cart.total_price | money_without_trailing_zeros }}</span>
         </button>
 
         {%- if settings.cart_enable_notes -%}
-          <div class="Cart__OffscreenNoteContainer" aria-hidden="true">
+          {% comment %}<div class="Cart__OffscreenNoteContainer" aria-hidden="true">{% endcomment %}
             {%- if cart.note == blank -%}
-              <span class="Cart__NoteButton">{{ 'cart.general.add_note' | t }}</span>
+              {% comment %}<span class="Cart__NoteButton">{{ 'cart.general.add_note' | t }}</span>{% endcomment %}
             {%- else -%}
-              <span class="Cart__NoteButton">{{ 'cart.general.edit_note' | t }}</span>
+              {% comment %}<span class="Cart__NoteButton">{{ 'cart.general.edit_note' | t }}</span>{% endcomment %}
             {%- endif -%}
-
-            <div class="Form__Item">
-              <textarea class="Cart__Note Form__Textarea" name="note" id="cart-note" rows="3" placeholder="{{ 'cart.general.note_placeholder' | t }}" data-scrollable>{{ cart.note }}</textarea>
-            </div>
-
-            <button type="button" class="Button Button--primary Button--full" data-action="toggle-cart-note">{{ 'cart.general.save_note' | t }}</button>
-          </div>
+{% comment %}{% endcomment %}
+            {% comment %}<div class="Form__Item">{% endcomment %}
+              {% comment %}<textarea class="Cart__Note Form__Textarea" name="note" id="cart-note" rows="3" placeholder="{{ 'cart.general.note_placeholder' | t }}" data-scrollable>{{ cart.note }}</textarea>{% endcomment %}
+            {% comment %}</div>{% endcomment %}
+{% comment %}{% endcomment %}
+            {% comment %}<button type="button" class="Button Button--primary Button--full" data-action="toggle-cart-note">{{ 'cart.general.save_note' | t }}</button>{% endcomment %}
+          {% comment %}</div>{% endcomment %}
         {%- endif -%}
       </div>
     {%- endunless -%}

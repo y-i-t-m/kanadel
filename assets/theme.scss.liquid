@@ -4533,16 +4533,6 @@ select::-ms-expand {
   width: 100%;
 }
 
-@include av-mq('phone') {
-  .ImageHero--newsletter {
-    min-height: 450px !important;
-  }
-
-  .ImageHero--newsletter .ImageHero__ContentOverlay {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-}
 
 @include av-mq('tablet-and-up') {
   .Newsletter__Inner {
@@ -6580,8 +6570,7 @@ select::-ms-expand {
  * ----------------------------------------------------------------------------
  */
 
-.Cart .Drawer__Footer,
-.Cart__OffscreenNoteContainer {
+.Cart .Drawer__Footer {
   padding: 14px 24px 24px 24px;
 }
 
@@ -6590,23 +6579,6 @@ select::-ms-expand {
   align-items: center;
   justify-content: center;
   margin-top: 18px;
-}
-
-.Cart__OffscreenNoteContainer {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  background: $background;
-  border-top: 1px solid $border-color;
-  transform: translateY(100%);
-  transition: transform 0.25s ease-in-out;
-}
-
-.Cart__OffscreenNoteContainer[aria-hidden="false"] {
-  transform: translateY(0);
-  box-shadow: 1px 0 6px rgba(#363636, 0.2);
 }
 
 .Cart__Note {
@@ -6627,11 +6599,20 @@ select::-ms-expand {
   opacity: 0.4;
   pointer-events: none;
   transition: opacity 0.5s ease;
+  position: relative;
+}
+
+.has-note-open[aria-hidden="false"] .Drawer__Main::before {
+  content: "備考内容を保存しました。";
+  display: block;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 @include av-mq('tablet-and-up') {
-  .Cart .Drawer__Footer,
-  .Cart__OffscreenNoteContainer {
+  .Cart .Drawer__Footer{
     padding: 20px 30px 30px 30px;
   }
 
@@ -11869,4 +11850,45 @@ i.icon-swym-wishlist:after {
 .contact-group p {
   margin-bottom: 0 !important;
   font-size: 14px;
+}
+
+.Cart__OffscreenNoteContainer {
+  width: 100%;
+  background: $background;
+  transition: transform 0.25s ease-in-out;
+  margin-bottom: 16px;
+}
+
+.Cart__OffscreenNoteContainer[aria-hidden="false"] {
+  display: none;
+}
+
+._mb-16 {
+  margin-bottom: 16px;
+}
+
+@include av-mq('phone') {
+  .ImageHero--newsletter {
+    min-height: 450px !important;
+  }
+
+  .ImageHero--newsletter .ImageHero__ContentOverlay {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .Cart__OffscreenNoteContainer {
+    border: none;
+    position: static;
+    transform: none;
+    padding: 0;
+  }
+
+  .Cart__OffscreenNoteContainer[aria-hidden="false"] {
+    display: none;
+  }
+}
+
+._mt-0 {
+  margin-top: 0;
 }

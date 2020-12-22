@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0ba1851d-ca28-459e-8719-d7a48f2c609c" name="デフォルト変更リスト" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/credit-card.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/credit-card.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/theme.scss.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/assets/theme.scss.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locales/ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/ja.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/collection-template.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/collection-template.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/list-collections-template.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/list-collections-template.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/page.guid-list.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/templates/page.guid-list.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/cart-drawer.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/cart-drawer.liquid" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +70,9 @@
       <workItem from="1607561311980" duration="5048000" />
       <workItem from="1607906233706" duration="25004000" />
       <workItem from="1608078161988" duration="331000" />
-      <workItem from="1608094317470" duration="3110000" />
+      <workItem from="1608094317470" duration="3209000" />
+      <workItem from="1608251720293" duration="37000" />
+      <workItem from="1608255430267" duration="13244000" />
     </task>
     <servers />
   </component>
