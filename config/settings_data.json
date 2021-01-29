@@ -93,7 +93,7 @@
         "type": "header",
         "settings": {
           "use_sticky_header": true,
-          "logo": "shopify:\/\/shop_images\/logo.png",
+          "logo": "shopify:\/\/shop_images\/HNB_logo.png",
           "logo_max_width": 350,
           "mobile_logo_max_width": 180,
           "show_currency_selector": true,
@@ -158,8 +158,8 @@
           "1601283511415": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/PC.png",
-              "mobile_image": "shopify:\/\/shop_images\/SP.png",
+              "image": "shopify:\/\/shop_images\/PC.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/SP_a298442e-38f0-40ad-a771-d79c0b2be6c5.jpg",
               "apply_overlay": false,
               "content_position": "bottomLeft",
               "subheading": "",
@@ -515,21 +515,8 @@
           "apparition_delay": 5
         }
       },
-      "1598610356232": {
-        "type": "text-with-image",
-        "disabled": true,
-        "settings": {
-          "subheading": "OUR CONCEPT",
-          "title": "NO BEER,NO LIFE.",
-          "image": "shopify:\/\/shop_images\/nobeer_nolife_f88cd598-b1bf-4dfd-b73b-67306271d183.jpg",
-          "image_position": "left",
-          "content": "<p>HIROSHIMA NEIGHBORLY BREWING（ヒロシマネイバリーブリューイング）は、「ビールは笑顔になる飲み物」をコンセプトにした醸造所です。<\/p><p>広島の季節のこだわりの素材を使用し、地域資源を活用したビールを製造・提供いたします。<\/p>",
-          "link_text": ""
-        }
-      },
       "1598610418832": {
         "type": "featured-collections",
-        "disabled": true,
         "blocks": {
           "1598610418832-0": {
             "type": "collection",
@@ -729,65 +716,6 @@
           "show_color_swatch": true
         }
       },
-      "1603952542dfd0c852": {
-        "type": "timeline",
-        "disabled": true,
-        "blocks": {
-          "1603952542dfd0c852-0": {
-            "type": "item",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/aaa.jpg",
-              "apply_overlay": true,
-              "title": "CONCEPT",
-              "subheading": "OUR CONCEPT",
-              "heading": "NO BEER,NO LIFE.",
-              "content": "<p>HIROSHIMA NEIGHBORLY BREWING（ヒロシマネイバリーブリューイング）は、「ビールは笑顔になる飲み物」をコンセプトにした醸造所です。<\/p><p>広島の季節のこだわりの素材を使用し、地域資源を活用したビールを製造・提供いたします。<\/p>"
-            }
-          },
-          "1603952542dfd0c852-1": {
-            "type": "item",
-            "settings": {
-              "apply_overlay": true,
-              "title": "QUALITY",
-              "subheading": "Sub-heading",
-              "heading": "Heading",
-              "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
-            }
-          },
-          "1603952542dfd0c852-2": {
-            "type": "item",
-            "settings": {
-              "apply_overlay": true,
-              "title": "FUTURE",
-              "subheading": "Sub-heading",
-              "heading": "Heading",
-              "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "1603952542dfd0c852-0",
-          "1603952542dfd0c852-1",
-          "1603952542dfd0c852-2"
-        ],
-        "settings": {
-          "text_color": "#ffffff"
-        }
-      },
-      "1603952860b90d994b": {
-        "type": "image-with-text-overlay",
-        "disabled": true,
-        "settings": {
-          "section_size": "small",
-          "image": "shopify:\/\/shop_images\/image1.jpg",
-          "text_color": "#333333",
-          "overlay_color": "#000000",
-          "overlay_opacity": 0,
-          "subheading": "",
-          "title": "Beer makes us Happy.",
-          "content": ""
-        }
-      },
       "1604473494fae1f760": {
         "type": "collection-list",
         "blocks": {
@@ -871,19 +799,6 @@
           "subheading": "",
           "title": "",
           "content": ""
-        }
-      },
-      "16045415537a63041d": {
-        "type": "banner-link",
-        "disabled": true,
-        "settings": {
-          "image": "shopify:\/\/shop_images\/subsc_banner.jpg",
-          "mobile_image": "shopify:\/\/shop_images\/subsc_banner_sp.jpg",
-          "first_title": "",
-          "second_title": "",
-          "banner_link": "http:\/\/google.com",
-          "content": "<p>定期購入・頒布会につきましてはただいま準備中です。ご利用開始まで今しばらくお待ちください。<\/p>",
-          "disabled": false
         }
       },
       "1604624057ac8c7fe9": {
@@ -983,32 +898,6 @@
           "apply_overlay": true,
           "text_color": "#ffffff",
           "button_color": "#363636"
-        }
-      },
-      "160491410628d97f2c": {
-        "type": "banner-link",
-        "disabled": true,
-        "settings": {
-          "image": "shopify:\/\/shop_images\/goods_banner.jpg",
-          "mobile_image": "shopify:\/\/shop_images\/goods_banner_sp.jpg",
-          "first_title": "",
-          "second_title": "",
-          "content": "",
-          "disabled": false
-        }
-      },
-      "16049141206c163d46": {
-        "type": "image-with-text-overlay",
-        "disabled": true,
-        "settings": {
-          "section_size": "large",
-          "image": "shopify:\/\/shop_images\/goods_banner.jpg",
-          "text_color": "#ffffff",
-          "overlay_color": "#000000",
-          "overlay_opacity": 0,
-          "subheading": "",
-          "title": "",
-          "content": ""
         }
       },
       "page-faq-template": {
@@ -1215,50 +1104,6 @@
           "disabled": false
         }
       },
-      "1606875963fc1e0767": {
-        "type": "shop-the-look",
-        "disabled": true,
-        "blocks": {
-          "1606875963fc1e0767-0": {
-            "type": "look",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/AKI_1916.jpg",
-              "dot_style": "light",
-              "product_1": "グラウラーのコピー",
-              "product_1_horizontal_position": 23,
-              "product_1_vertical_position": 56,
-              "product_2": "",
-              "product_2_horizontal_position": 45,
-              "product_2_vertical_position": 65,
-              "product_3": "",
-              "product_3_horizontal_position": 70,
-              "product_3_vertical_position": 50
-            }
-          }
-        },
-        "block_order": [
-          "1606875963fc1e0767-0"
-        ],
-        "settings": {
-          "subheading": "Shop",
-          "title": "Our looks",
-          "show_mobile_product_info": false
-        }
-      },
-      "16068847743dd46707": {
-        "type": "image-with-text-block",
-        "disabled": true,
-        "settings": {
-          "image": "shopify:\/\/shop_images\/akikophotography-6300.jpg",
-          "background": "#ffffff",
-          "text_color": "#1c1b1b",
-          "block_size": "large",
-          "title": "NO BEER,NO LIFE.",
-          "content": "<p>HIROSHIMA NEIGHBORLY BREWING（ヒロシマネイバリーブリューイング）は、「ビールは笑顔になる飲み物」をコンセプトにした醸造所です。<\/p><p>広島の季節のこだわりの素材を使用し、地域資源を活用したビールを製造・提供いたします。<\/p>",
-          "button_label": "",
-          "show_parallax": true
-        }
-      },
       "1606886374baba3133": {
         "type": "image-with-text-block",
         "settings": {
@@ -1274,12 +1119,11 @@
       },
       "16073402260f5d2841": {
         "type": "featured-product",
-        "disabled": true,
         "settings": {
           "subheading": "HNBオリジナルクラフトビール",
           "title": "OUR ORIGINAL BEER",
           "show_headings_on_mobile": true,
-          "product": "クラフトビール-オンラインフェス-視聴者専用ビール6本セット-送料無料",
+          "product": "craftbeer-online-fes-6pieces",
           "show_vendor": false,
           "show_sku": false,
           "show_description": false,
@@ -1294,56 +1138,12 @@
           "show_payment_button": true
         }
       },
-      "16073906534be68110": {
-        "type": "shop-the-look",
-        "disabled": true,
-        "blocks": {
-          "16073906534be68110-0": {
-            "type": "look",
-            "settings": {
-              "dot_style": "light",
-              "product_1": "",
-              "product_1_horizontal_position": 30,
-              "product_1_vertical_position": 40,
-              "product_2": "",
-              "product_2_horizontal_position": 45,
-              "product_2_vertical_position": 65,
-              "product_3": "",
-              "product_3_horizontal_position": 70,
-              "product_3_vertical_position": 50
-            }
-          },
-          "1cf9217d-9344-44e0-923c-2cee6886fe19": {
-            "type": "look",
-            "settings": {
-              "dot_style": "light",
-              "product_1": "",
-              "product_1_horizontal_position": 15,
-              "product_1_vertical_position": 15,
-              "product_2": "",
-              "product_2_horizontal_position": 50,
-              "product_2_vertical_position": 50,
-              "product_3": "",
-              "product_3_horizontal_position": 85,
-              "product_3_vertical_position": 85
-            }
-          }
-        },
-        "block_order": [
-          "16073906534be68110-0",
-          "1cf9217d-9344-44e0-923c-2cee6886fe19"
-        ],
-        "settings": {
-          "subheading": "HNBオリジナルTシャツ",
-          "title": "ORIGINAL T-SHIRTS",
-          "show_mobile_product_info": false
-        }
-      },
       "1607567658f2e6a703": {
         "type": "banner-link",
+        "disabled": true,
         "settings": {
-          "image": "shopify:\/\/shop_images\/Coming-Soon1.jpg",
-          "mobile_image": "shopify:\/\/shop_images\/Coming-Soon1.jpg",
+          "image": "shopify:\/\/shop_images\/Coming-Soon_00172d3d-ae13-46a7-a83a-e17e99a0c9ed.jpg",
+          "mobile_image": "shopify:\/\/shop_images\/Coming-Soon_1dea0e0d-22a0-4636-ae15-5dc84e9dec37.jpg",
           "first_title": "HNBオリジナルクラフトビール",
           "second_title": "OUR ORIGINAL BEER",
           "content": "",
@@ -1352,9 +1152,10 @@
       },
       "1607569152ff8a0e55": {
         "type": "banner-link",
+        "disabled": true,
         "settings": {
-          "image": "shopify:\/\/shop_images\/Coming-Soon1.jpg",
-          "mobile_image": "shopify:\/\/shop_images\/Coming-Soon1.jpg",
+          "image": "shopify:\/\/shop_images\/Coming-Soon_80d71ce9-ecf7-4058-9777-e92a0bff70d2.jpg",
+          "mobile_image": "shopify:\/\/shop_images\/Coming-Soon_ce946dda-63b7-4f01-bd39-3b07fa52ac13.jpg",
           "first_title": "セット",
           "second_title": "SET",
           "content": "",
@@ -1367,26 +1168,17 @@
       "1600242624853",
       "1607567658f2e6a703",
       "16073402260f5d2841",
-      "1603952542dfd0c852",
       "1606886374baba3133",
-      "1598610356232",
-      "16068847743dd46707",
-      "1603952860b90d994b",
-      "1598610418832",
       "1607569152ff8a0e55",
+      "1598610418832",
       "1605855134365e42db",
       "1604624057ac8c7fe9",
-      "16049141206c163d46",
       "1606186358bd43de7c",
-      "160491410628d97f2c",
-      "16073906534be68110",
       "1599800127703",
-      "16045415537a63041d",
       "1604473494fae1f760",
       "1599800079542",
       "1604642586f25826c6",
-      "160448244264684788",
-      "1606875963fc1e0767"
+      "160448244264684788"
     ]
   },
   "presets": {

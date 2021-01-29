@@ -143,7 +143,7 @@
       {%- endif -%}
 
       <div class="Footer__Copyright">
-        <a href="{{ routes.root_url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© relay & kanaderu inc.</a>
+        <a href="{{ routes.root_url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© relay inc.</a>
       </div>
 
       {%- if section.settings.show_payment_methods -%}
@@ -152,7 +152,6 @@
             <li class="HorizontalList__Item">{{ type | payment_type_svg_tag }}</li>
           {%- endfor -%}
         {%- endcapture -%}
-
         {%- if payment_methods != blank -%}
           <ul class="Footer__PaymentList HorizontalList">
             {{ payment_methods }}
