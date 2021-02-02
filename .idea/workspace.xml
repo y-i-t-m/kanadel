@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ba1851d-ca28-459e-8719-d7a48f2c609c" name="デフォルト変更リスト" comment="">
+      <change afterPath="$PROJECT_DIR$/sections/blog-posts2.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locales/ja.json" beforeDir="false" afterPath="$PROJECT_DIR$/locales/ja.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/footer.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/footer.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/blog-template.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/blog-template.liquid" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,7 @@
   </component>
   <component name="ProjectId" id="1iAmmM164Vftp53lXe6ZdlJCu6A" />
   <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="2" id="追加" />
   </component>
   <component name="ProjectViewState">
@@ -38,6 +38,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sections" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,6 +49,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sections" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
