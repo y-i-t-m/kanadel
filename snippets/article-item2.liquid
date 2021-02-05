@@ -1,0 +1,13 @@
+<article class="ArticleItem tweak border" {% if block %}{{ block.shopify_attributes }}{% endif %}>
+    {%- if section.settings.show_category -%}
+        <span class="ArticleItem__Category Heading u-h6 Text--subdued">{{ article.tags.first }}</span>
+    {%- endif -%}
+    <div class="flex items-center">
+        <div class="main-meta">
+            <time datetime="" class="fz-16">{{ article.published_at | date: "%Y.%m.%d" }}</time>
+        </div>
+        <h2 class="ArticleItem__Title Heading main-head">
+            <a href="{{ article.url }}" class="ArticleItem__Link fz-16">{{ article.title }}</a>
+        </h2>
+    </div>
+</article>

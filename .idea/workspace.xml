@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ba1851d-ca28-459e-8719-d7a48f2c609c" name="デフォルト変更リスト" comment="">
-      <change afterPath="$PROJECT_DIR$/sections/blog-posts2.liquid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snippets/article-item2.liquid" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/blog-template.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/blog-template.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/theme.scss.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/assets/theme.scss.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/blog-posts2.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/blog-posts2.liquid" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sections" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/snippets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,6 +51,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/snippets" />
       <recent name="$PROJECT_DIR$/sections" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -82,6 +84,8 @@
       <workItem from="1611314424885" duration="598000" />
       <workItem from="1611534721065" duration="599000" />
       <workItem from="1611549254456" duration="557000" />
+      <workItem from="1612311796421" duration="428000" />
+      <workItem from="1612513140447" duration="5132000" />
     </task>
     <servers />
   </component>
