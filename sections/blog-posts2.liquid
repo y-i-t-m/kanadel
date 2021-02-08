@@ -2,13 +2,15 @@
         data-section-id="{{ section.id }}">
     <div class="Container">
         {%- if section.settings.subheading != blank or section.settings.title != blank -%}
-            <header class="SectionHeader SectionHeader--center">
-                {%- if section.settings.subheading != blank -%}
-                    <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
-                {%- endif -%}
-
+            <header class="flex justify-between items-center">
                 {%- if section.settings.title != blank -%}
-                    <h2 class="SectionHeader__Heading Heading u-h1 fz-32">{{ section.settings.title | escape }}</h2>
+                    <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+                {%- endif -%}
+                {%- if section.settings.button_text != blank -%}
+                    <div class="">
+                        <a href="{{ section.settings.button_link }}"
+                                class="chevron-button">{{ section.settings.button_text | escape }}</a>
+                    </div>
                 {%- endif -%}
             </header>
         {%- endif -%}
@@ -57,19 +59,11 @@
                 {%- endif -%}
             </div>
         </div>
-
-        {%- if section.settings.button_text != blank -%}
-            <div class="SectionFooter">
-                <a href="{{ section.settings.button_link }}"
-                        class="Button Button--primary">{{ section.settings.button_text | escape }}</a>
-            </div>
-        {%- endif -%}
     </div>
 </section>
 {% schema %}
 {
 "name": "Blog posts2",
-"class": "shopify-section--bordered",
 "max_blocks": 1,
 "settings": [
 {
