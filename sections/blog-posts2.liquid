@@ -2,7 +2,7 @@
         data-section-id="{{ section.id }}">
     <div class="Container">
         {%- if section.settings.subheading != blank or section.settings.title != blank -%}
-            <header class="flex justify-between items-center">
+            <header class="flex justify-between items-center blog-header mx-auto">
                 {%- if section.settings.title != blank -%}
                     <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
                 {%- endif -%}
