@@ -9,113 +9,93 @@
     }
 {%- endcapture -%}
 
-<section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-list">
-    {%- capture collection_items -%}
-        {%- for block in section.blocks -%}
-            {%- assign collection = collections[block.settings.collection] -%}
-            {%- render 'collection-item2', block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
-        {%- endfor -%}
-    {%- endcapture -%}
+<section id="section-{{ section.id }}" class="py-64 -bg-gray" data-section-id="{{ section.id }}"
+        data-section-type="collection-list">
+    <div class="restaurant-container">
+        {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+            <header class="SectionHeader SectionHeader--center">
+                {%- if section.settings.subheading != blank -%}
+                    <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+                {%- endif -%}
 
-    {%- if section.settings.stack_on_mobile -%}
-        <div class="CollectionList CollectionList--grid {% if section.settings.add_spacing %}CollectionList--spaced{% endif %}">
-            {{ collection_items }}
+                {%- if section.settings.title != blank -%}
+                    <h2 class="SectionHeader__Heading Heading u-h1 fz-32">{{ section.settings.title | escape }}</h2>
+                {%- endif -%}
+            </header>
+        {%- endif -%}
+        <div class="l-grid-small">
+            {%- for block in section.blocks -%}
+                <div class="l-grid-small__cell col-sm-4">
+                    <div class="restaurant">
+                        <div class="restaurant__img-wrap">
+                            <img class="restaurant__img" src="{{ block.settings.image | img_url: '800x' }}" alt="">
+                        </div>
+                        <div class="">
+                            <h3 class="text-center restaurant__head">{{ block.settings.title }}</h3>
+                        </div>
+                        <p class="text-center mb-0">{{ block.settings.address }}</p>
+                        <p class="text-center">TEL&nbsp;{{ block.settings.tel }}</p>
+                        <div class="flex items-center justify-around">
+                            <a href="{{ block.settings.button_link }}" class="restaurant-btn">{{ block.settings.button_txt }}</a>
+                            <div class="sns_block">
+                                {%- if block.settings.sns_facebook_link != blank -%}
+                                    <a href="{{ block.settings.sns_facebook_link | replace_first: 'https://', '' | replace_first: 'http://', '' | prepend: 'https://' }}"
+                                            class="Link Link--primary" target="_blank"
+                                            rel="noopener" aria-label="FaceBook">
+
+                                        <span class="Icon-Wrapper--clickable">{%- render 'icon' with 'facebook_2' -%}</span>
+                                    </a>
+                                {%- endif -%}
+                                {%- if block.settings.sns_twitter_link != blank -%}
+                                    <a href="{{ block.settings.sns_twitter_link | replace_first: 'https://', '' | replace_first: 'http://', '' | prepend: 'https://' }}"
+                                            class="Link Link--primary" target="_blank"
+                                            rel="noopener" aria-label="Twitter">
+                                        <span class="Icon-Wrapper--clickable">{%- render 'icon' with 'twitter_2' -%}</span>
+                                    </a>
+                                {%- endif -%}
+                                {%- if block.settings.sns_instagram_link != blank -%}
+                                    <a href="{{ block.settings.sns_instagram_link | replace_first: 'https://', '' | replace_first: 'http://', '' | prepend: 'https://' }}"
+                                            class="Link Link--primary" target="_blank"
+                                            rel="noopener" aria-label="Instagram">
+                                        <span class="Icon-Wrapper--clickable">{%- render 'icon' with 'instagram_2' -%}</span>
+                                    </a>
+                                {%- endif -%}
+                                {%- if block.settings.line_black != blank -%}
+                                    <a href="{{ block.settings.line_black | replace_first: 'https://', '' | replace_first: 'http://', '' | prepend: 'https://' }}"
+                                            class="Link Link--primary" target="_blank"
+                                            rel="noopener" aria-label="LINE">
+                                        <span class="Icon-Wrapper--clickable">{%- render 'icon' with 'line_black2' -%}</span>
+                                    </a>
+                                {%- endif -%}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {%- endfor -%}
         </div>
-    {%- else -%}
-        <div class="Carousel Carousel--insideDots CollectionList {% if section.settings.add_spacing %}CollectionList--spaced{% endif %}" data-flickity-config='{{ flickity_options }}'>
-            {{ collection_items }}
-        </div>
-    {%- endif -%}
+    </div>
 </section>
-
-<style>
-  #section-{{ section.id }} .CollectionItem .Heading,
-  #section-{{ section.id }} .flickity-page-dots {
-    color: {{ section.settings.text_color }};
-  }
-
-  #section-{{ section.id }} .CollectionItem__Link {
-    color: {{ section.settings.button_color }};
-    border-color: {{ section.settings.text_color }};
-  }
-
-  #section-{{ section.id }} .CollectionItem__Link::before {
-    background-color: {{ section.settings.text_color }};
-  }
-
-  @media (-moz-touch-enabled: 0), (hover: hover) {
-    #section-{{ section.id }} .CollectionItem__Link:hover {
-      color: {{ section.settings.text_color }};
-    }
-  }
-</style>
 
 {% schema %}
 {
 "name": "Restaurant list",
-"max_blocks": 18,
 "settings": [
 {
-"type": "select",
-"id": "image_size",
-"label": "Image size",
-"options": [
-{
-"value": "small",
-"label": "Small"
+"type": "text",
+"id": "subheading",
+"label": "Sub-heading"
 },
 {
-"value": "normal",
-"label": "Normal"
-},
-{
-"value": "large",
-"label": "Large"
-}
-],
-"default": "normal"
-},
-{
-"type": "checkbox",
-"id": "add_spacing",
-"label": "Add spacing",
-"default": true
-},
-{
-"type": "checkbox",
-"id": "expand_collection",
-"label": "Expand collections to fill row",
-"default": false
-},
-{
-"type": "checkbox",
-"id": "stack_on_mobile",
-"label": "Stack on mobile",
-"default": true
-},
-{
-"type": "color",
-"id": "text_color",
-"label": "Text",
-"default": "#ffffff"
-},
-{
-"type": "color",
-"id": "button_color",
-"label": "Button text",
-"default": "#363636"
+"type": "text",
+"id": "title",
+"label": "Heading"
 }
 ],
 "blocks": [
 {
-"type": "collection",
-"name": "Collection",
+"type": "item",
+"name": "Item",
 "settings": [
-{
-"type": "collection",
-"id": "collection",
-"label": "Collection"
-},
 {
 "type": "image_picker",
 "id": "image",
@@ -123,110 +103,29 @@
 "info": "1120 x 1200px .jpg recommended"
 },
 {
-"type": "select",
-"id": "image_alignment",
-"label": "Image alignment",
-"options": [
-{
-"value": "top left",
-"label": "Top left"
-},
-{
-"value": "top center",
-"label": "Top center"
-},
-{
-"value": "top right",
-"label": "Top right"
-},
-{
-"value": "center left",
-"label": "Middle left"
-},
-{
-"value": "center center",
-"label": "Middle center"
-},
-{
-"value": "center right",
-"label": "Middle right"
-},
-{
-"value": "bottom left",
-"label": "Bottom left"
-},
-{
-"value": "bottom center",
-"label": "Bottom center"
-},
-{
-"value": "bottom right",
-"label": "Bottom right"
-}
-],
-"default": "center center"
-},
-{
-"type": "select",
-"id": "content_position",
-"label": "Content position",
-"options": [
-{
-"value": "middleLeft",
-"label": "Middle left"
-},
-{
-"value": "middleRight",
-"label": "Middle right"
-},
-{
-"value": "middleCenter",
-"label": "Middle center"
-},
-{
-"value": "bottomLeft",
-"label": "Bottom left"
-},
-{
-"value": "bottomRight",
-"label": "Bottom right"
-},
-{
-"value": "bottomCenter",
-"label": "Bottom center"
-}
-],
-"default": "bottomLeft"
-},
-{
-"type": "text",
-"id": "subheading",
-"label": "Sub-heading",
-"default": "Sub-heading"
-},
-{
 "type": "text",
 "id": "title",
 "label": "Heading",
 "default": "Collection name"
+},{
+"type": "text",
+"id": "address",
+"label": "Address"
+},{
+"type": "text",
+"id": "tel",
+"label": "Tel"
 },
 {
 "type": "text",
-"id": "button_text",
+"id": "button_txt",
 "label": "Button text",
-"default": "View products"
+"default": "View More"
 },
 {
 "type": "text",
 "id": "button_link",
 "label": "URL"
-},
-{
-"type": "checkbox",
-"id": "apply_overlay",
-"label": "Apply overlay on image",
-"info": "This can improve text visibility.",
-"default": true
 },
 {
 "type": "text",
@@ -253,18 +152,15 @@
 ],
 "presets": [
 {
-"category": "Collection",
+"category": "Advanced",
 "name": "Restaurant list",
 "settings": {},
 "blocks": [
 {
-"type": "collection"
-},
-{
-"type": "collection"
-},
-{
-"type": "collection"
+"type": "item",
+"settings": {
+"title": "About Item"
+}
 }
 ]
 }

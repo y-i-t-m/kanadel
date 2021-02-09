@@ -3,7 +3,7 @@
         <div class="l-grid-main">
             {%- for block in section.blocks -%}
                 <div class="l-grid-main__cell col-sm-6">
-                    <a href="" class="About">
+                    <a href="{{ block.settings.link }}" class="About">
                         <span class="About__hover">
                             <span class="About__hover-btn">VIEW MORE</span>
                         </span>
@@ -11,16 +11,19 @@
                             <img class="About__img" src="{{ block.settings.image | img_url: '800x' }}" alt="">
                         </div>
                         <div class="About__title">
-                            <h3><span class="About__head-main">Our Original Beer</span><span class="About__head-sub">HNBオリジナルクラフトビール</span>
+                            <h3><span class="About__head-main mark">{{ block.settings.heading }}</span><br class="pc--none"><span
+                                        class="About__head-sub">{{ block.settings.subheading }}</span>
                             </h3>
                         </div>
-                        <div class="About__label">
-                            <div class="About__label-inner">
-                               <div class="About__label-txt">
-                                   Products
-                               </div>
+                        {%- if block.settings.product -%}
+                            <div class="About__label">
+                                <div class="About__label-inner">
+                                    <div class="About__label-txt">
+                                        Products
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        {%- endif -%}
                     </a>
                 </div>
             {%- endfor -%}
@@ -43,13 +46,6 @@
 "info": "1200 x 1200px .jpg recommended"
 },
 {
-"type": "checkbox",
-"id": "apply_overlay",
-"label": "Apply overlay on image",
-"info": "Only applied on mobile. This can improve text visibility.",
-"default": true
-},
-{
 "type": "text",
 "id": "title",
 "label": "Label",
@@ -59,20 +55,24 @@
 {
 "type": "text",
 "id": "subheading",
-"label": "Sub-heading",
+"label": "サブタイトル",
 "default": "Sub-heading"
 },
 {
 "type": "text",
 "id": "heading",
-"label": "Heading",
+"label": "メインタイトル",
 "default": "Heading"
 },
 {
-"type": "richtext",
-"id": "content",
-"label": "Text",
-"default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+"type": "url",
+"id": "link",
+"label": "リンク"
+},
+{
+"type": "checkbox",
+"id": "product",
+"label":"プロダクトであればチェックをつける"
 }
 ]
 }
@@ -86,19 +86,7 @@
 {
 "type": "item",
 "settings": {
-"title": "2000"
-}
-},
-{
-"type": "item",
-"settings": {
-"title": "2001"
-}
-},
-{
-"type": "item",
-"settings": {
-"title": "2002"
+"title": "About Item"
 }
 }
 ]

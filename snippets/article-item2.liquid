@@ -2,7 +2,7 @@
     {%- if section.settings.show_category -%}
         <span class="ArticleItem__Category Heading u-h6 Text--subdued">{{ article.tags.first }}</span>
     {%- endif -%}
-    <div class="flex items-center">
+    <div class="flex items-center justify-between">
         <div class="main-meta">
             <time datetime="" class="fz-16">{{ article.published_at | date: "%Y.%m.%d" }}</time>
         </div>
