@@ -17,7 +17,7 @@
             {%- case block.type -%}
               {%- when 'text' -%}
                 {%- if block.settings.title != blank -%}
-                  <h2 class="Footer__Title Heading u-h6">{{ block.settings.title | escape }}</h2>
+                  <h2 class="Footer__Title Heading u-h4 font-bold">{{ block.settings.title | escape }}</h2>
                 {%- endif -%}
 
                 {%- if block.settings.content != blank -%}
@@ -34,7 +34,7 @@
                 {%- assign linklist = linklists[block.settings.menu] -%}
 
                 {%- if linklist != empty -%}
-                  <h2 class="Footer__Title Heading u-h6">{{ linklist.title | escape }}</h2>
+                  <h2 class="Footer__Title Heading u-h4 font-bold">{{ linklist.title | escape }}</h2>
 
                   <ul class="FooterLinklist">
                     {%- for link in linklist.links -%}
@@ -47,7 +47,7 @@
 
               {%- when 'FooterButton' -%}
                 {%- if block.settings.title != blank -%}
-                  <h2 class="Footer__Title Heading u-h6"></h2>
+                  <h2 class="Footer__Title Heading u-h4 font-bold"></h2>
                 {%- endif -%}
 
                 {%- if block.settings.content != blank -%}
@@ -66,7 +66,7 @@
 
                 {%- when 'list' -%}
                     {%- if linklist != empty -%}
-                        <h2 class="Footer__Title Heading u-h6">{{ block.settings.title | escape }}</h2>
+                        <h2 class="Footer__Title Heading u-h4 font-bold">{{ block.settings.title | escape }}</h2>
                     {%- endif -%}
                 {%- if block.settings.content != blank -%}
                     {{ block.settings.content }}

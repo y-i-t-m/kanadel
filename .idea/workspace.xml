@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0ba1851d-ca28-459e-8719-d7a48f2c609c" name="デフォルト変更リスト" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/theme.scss.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/assets/theme.scss.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/restaurant.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/restaurant.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sections/top-about.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/top-about.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/article-item2.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/article-item2.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/collection-item2.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/collection-item2.liquid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/icon.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/icon.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/footer.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/footer.liquid" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +83,7 @@
       <workItem from="1611534721065" duration="599000" />
       <workItem from="1611549254456" duration="557000" />
       <workItem from="1612311796421" duration="428000" />
-      <workItem from="1612513140447" duration="9914000" />
+      <workItem from="1612513140447" duration="11347000" />
     </task>
     <servers />
   </component>
